@@ -1,16 +1,0 @@
-[1/10] Performing build step for 'bootloader'
-[1/1] cmd.exe /C "cd /D D:\MyCode\esp32\esp32e_code\zproj_SmartWatch\build\bootloader\esp-idf\esptool_py && d:\Environment_file\esp32\.espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe D:/Environment_file/esp32/v5.2.3/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 D:/MyCode/esp32/esp32e_code/zproj_SmartWatch/build/bootloader/bootloader.bin"
-Bootloader binary size 0x6860 bytes. 0x7a0 bytes (7%) free.
-[2/8] Building C object esp-idf/com/CMakeFiles/__idf_com.dir/sdcard.c.obj
-[3/8] Linking C static library esp-idf\com\libcom.a
-[4/8] Linking C static library esp-idf\main\libmain.a
-[5/8] Generating ld/sections.ld
-[6/8] Linking CXX executable zproj_SmartWatch.elf
-[7/8] Generating binary image from built executable
-esptool.py v4.8.1
-Creating esp32 image...
-Merged 2 ELF sections
-Successfully created esp32 image.
-Generated D:/MyCode/esp32/esp32e_code/zproj_SmartWatch/build/zproj_SmartWatch.bin
-[8/8] cmd.exe /C "cd /D D:\MyCode\esp32\esp32e_code\zproj_SmartWatch\build\esp-idf\esptool_py && d:\Environment_file\esp32\.espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe D:/Environment_file/esp32/v5.2.3/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/MyCode/esp32/esp32e_code/zproj_SmartWatch/build/partition_table/partition-table.bin D:/MyCode/esp32/esp32e_code/zproj_SmartWatch/build/zproj_SmartWatch.bin"
-zproj_SmartWatch.bin binary size 0x168fc0 bytes. Smallest app partition is 0x200000 bytes. 0x97040 bytes (29%) free.
