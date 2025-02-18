@@ -32,7 +32,7 @@ Enter the following command into the git terminal
 
 ​		**LCD**
 
-![](readme\02.jpg)
+![](readme/02.jpg)
 
 
 
@@ -72,7 +72,7 @@ then Enter the following command in order:  `idf.py menuconfig`，
 
 After the configuration page is displayed, perform the following configurations：
 
-![](readme\01.jpg)
+![](readme/01.jpg)
 
 
 
