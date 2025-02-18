@@ -1,0 +1,589 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.3-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Feb 13 2025 13:01:37[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00200000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=75a24h (481828) map[0m
+[0;32mI (270) esp_image: segment 1: paddr=00085a4c vaddr=3ffb0000 size=043cch ( 17356) load[0m
+[0;32mI (276) esp_image: segment 2: paddr=00089e20 vaddr=40080000 size=061f8h ( 25080) load[0m
+[0;32mI (287) esp_image: segment 3: paddr=00090020 vaddr=400d0020 size=e3568h (931176) map[0m
+[0;32mI (606) esp_image: segment 4: paddr=00173590 vaddr=400861f8 size=14368h ( 82792) load[0m
+[0;32mI (638) esp_image: segment 5: paddr=00187900 vaddr=50000000 size=00004h (     4) load[0m
+[0;32mI (652) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (652) boot: Disabling RNG early entropy source...[0m
+[0;32mI (663) cpu_start: Multicore app[0m
+[0;32mI (673) cpu_start: Pro cpu start user code[0m
+[0;32mI (673) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (673) cpu_start: Application information:[0m
+[0;32mI (676) cpu_start: Project name:     zproj_SmartWatch[0m
+[0;32mI (682) cpu_start: App version:      1[0m
+[0;32mI (686) cpu_start: Compile time:     Feb 13 2025 13:04:33[0m
+[0;32mI (692) cpu_start: ELF file SHA256:  30861dfcb...[0m
+[0;32mI (697) cpu_start: ESP-IDF:          v5.2.3-dirty[0m
+[0;32mI (703) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (707) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (712) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (717) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (724) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (730) heap_init: At 3FFB97F0 len 00026810 (154 KiB): DRAM[0m
+[0;32mI (737) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (743) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (749) heap_init: At 4009A560 len 00005AA0 (22 KiB): IRAM[0m
+[0;32mI (757) spi_flash: detected chip: generic[0m
+[0;32mI (760) spi_flash: flash io: dio[0m
+[0;33mW (764) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (775) main_task: Started on CPU0[0m
+[0;32mI (785) main_task: Calling app_main()[0m
+[0;32mI (815) wifi:wifi driver task: 3ffc1840, prio:23, stack:6656, core=0[0m
+[0;32mI (825) wifi:wifi firmware version: 82f54d2[0m
+[0;32mI (825) wifi:wifi certification version: v7.0[0m
+[0;32mI (825) wifi:config NVS flash: enabled[0m
+[0;32mI (825) wifi:config nano formating: disabled[0m
+[0;32mI (835) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (835) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (835) wifi:Init management short buffer num: 32[0m
+[0;32mI (845) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (845) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (855) wifi:Init static rx buffer num: 10[0m
+[0;32mI (855) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (865) wifi_init: rx ba win: 6[0m
+[0;32mI (865) wifi_init: tcpip mbox: 32[0m
+[0;32mI (865) wifi_init: udp mbox: 6[0m
+[0;32mI (875) wifi_init: tcp mbox: 6[0m
+[0;32mI (875) wifi_init: tcp tx win: 5760[0m
+[0;32mI (875) wifi_init: tcp rx win: 5760[0m
+[0;32mI (885) wifi_init: tcp mss: 1440[0m
+[0;32mI (885) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (895) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (895) wifi:Password length is zero, but authmode threshold is 3, making it impossible to connect to an AP with authmode OPEN[0m
+[0;32mI (905) sdcard: Using SPI peripheral[0m
+[0;32mI (915) sdcard: Mounting filesystem[0m
+[0;32mI (915) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (1125) sdmmc_sd: sdmmc_init_sd_if_cond: send_if_cond (1) returned 0x108[0m
+[0;31mE (1125) vfs_fat_sdmmc: sdmmc_card_init failed (0x108).[0m
+[0;32mI (1125) gpio: GPIO[13]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1135) sdcard: SDcard mount failed![0m
+[0;32mI (1135) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1145) gpio: GPIO[21]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1155) st7789: create esp_lcd_new_panel[0m
+[0;32mI (1165) gpio: GPIO[17]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (2005) cst816t: 	Chip ID: 0xb5[0m
+[0;32mI (2005) cst816t: 	Firmware version: 0x01[0m
+[0;32mI (2005) cst816t: 	Factory ID: 0x04[0m
+[0;32mI (22865) phy_init: phy_version 4840,a40f0ac,Aug 16 2024,16:48:06[0m
+[0;32mI (22945) wifi:mode : sta (ec:64:c9:90:7a:94)[0m
+[0;32mI (22945) wifi:enable tsf[0m
+[0;32mI (23005) smartconfig: SC version: V3.0.1[0m
+[0;32mI (23005) myWIFI: smartconfig  has started![0m
+[0;32mI (27855) wifi:ic_enable_sniffer[0m
+[0;32mI (27855) smartconfig: Start to find channel...[0m
+[0;32mI (27855) myWIFI: Scan done[0m
+[0;32mI (31195) smartconfig: TYPE: ESPTOUCH[0m
+[0;32mI (31195) smartconfig: T|AP MAC: a6:4f:fd:7a:2e:5b[0m
+[0;32mI (31195) smartconfig: Found channel on 11-0. Start to get ssid and password...[0m
+[0;32mI (31195) myWIFI: Found channel[0m
+[0;32mI (32045) smartconfig: T|pswd: Cc.246850@[0m
+[0;32mI (32045) smartconfig: T|ssid: Apple100[0m
+[0;32mI (32045) smartconfig: T|bssid: a6:4f:fd:7a:2e:5b[0m
+[0;32mI (32045) wifi:ic_disable_sniffer[0m
+[0;32mI (32055) myWIFI: Got SSID and password[0m
+[0;33mW (32055) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (33595) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (33605) wifi:state: init -> auth (b0)[0m
+[0;32mI (33615) wifi:state: auth -> assoc (0)[0m
+[0;32mI (33615) wifi:state: assoc -> run (10)[0m
+[0;32mI (34655) wifi:connected with Apple100, aid = 10, channel 11, BW20, bssid = a6:4f:fd:7a:2e:5b[0m
+[0;32mI (34655) wifi:security: WPA2-PSK, phy: bgn, rssi: -40[0m
+[0;32mI (34675) wifi:pm start, type: 1[0m
+
+[0;32mI (34675) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (34675) myWIFI: conneted success![0m
+[0;32mI (34705) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (34705) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (37495) wifi:<ba-add>idx:0 (ifx:0, a6:4f:fd:7a:2e:5b), tid:0, ssn:0, winSize:64[0m
+[0;32mI (38175) esp_netif_handlers: sta ip: 192.168.43.221, mask: 255.255.255.0, gw: 192.168.43.1[0m
+[0;32mI (38175) myWIFI: WIFI GOT IP[0m
+[0;32mI (39135) myNTP: mySntp start[0m
+[0;32mI (39135) myNTP: Boot count: 1[0m
+[0;32mI (39135) myNTP: Time is not set yet. Connecting to WiFi and getting time over NTP.[0m
+[0;32mI (39135) myNTP: Initializing SNTP[0m
+[0;32mI (39135) myNTP: Starting SNTP[0m
+[0;32mI (39145) myNTP: List of configured NTP servers:[0m
+[0;32mI (39145) myNTP: server 0: cn.pool.ntp.org[0m
+[0;32mI (39155) myNTP: server 1: time.windows.com[0m
+[0;32mI (39155) myNTP: server 2: ntp.sjtu.edu.cn[0m
+[0;32mI (39165) https_req: Start 1th https_request[0m
+[0;32mI (39165) https_req: Updating time from NVS[0m
+time in nvs:1739549016
+[0;32mI (39175) https_req: https_request using crt bundle[0m
+[0;32mI (39445) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (39975) https_req: Connection established...[0m
+[0;32mI (39975) https_req: 193 bytes written[0m
+[0;32mI (39975) https_req: Reading HTTP response...[0m
+HTTP/1.1 200 OK
+Date: Fri, 14 Feb 2025 16:07:27 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 1006
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"3ee-yw5b+Nna+n4Gd9/h3hbcEa/363A"
+x-powered-by: Express
+x-ratelimit-limit: 20;w=60
+x-ratelimit-remaining: 19
+x-ratelimit-reset: 60.000
+x-request-id: GCQe0uNFLaSv8wNFAB6E
+x-tenant-id: 0a2eb6f6-2727-482d-a691-e6d0848af3d9
+
+广州 2025-02-15 9 temperature:15~24
+广州 2025-02-16 9 temperature:14~23
+广州 2025-02-17 4 temperature:14~24
+[0;32mI (41025) wifi:<ba-add>idx:1 (ifx:0, a6:4f:fd:7a:2e:5b), tid:2, ssn:0, winSize:64[0m
+[0;32mI (41035) myNTP: Notification of a time synchronization event[0m
+after sync tim_stamp: 1739549248
+[0;32mI (41045) myNTP: tim_write_into_nvs successful[0m
+[0;32mI (41045) myNTP: 1th: The current date/time in BeiJing is: Sat Feb 15 00:07:28 2025[0m
+[0;32mI (41045) main: mySntp_done, Beijing time was successfully obtained[0m
+[0;32mI (41215) myWIFI: WiFi Connected to ap[0m
+[0;32mI (41215) myWIFI: smartconfig over[0m
+[0;32mI (45155) https_req: connection closed[0m
+[0;32mI (45155) https_req: 10...[0m
+[0;32mI (46155) https_req: 9...[0m
+[0;32mI (47155) https_req: 8...[0m
+[0;32mI (48155) https_req: 7...[0m
+[0;32mI (49155) https_req: 6...[0m
+[0;32mI (50155) https_req: 5...[0m
+[0;32mI (51155) https_req: 4...[0m
+[0;32mI (52155) https_req: 3...[0m
+[0;32mI (53155) https_req: 2...[0m
+[0;32mI (54155) https_req: 1...[0m
+[0;32mI (55155) https_req: 0...[0m
+[0;32mI (56155) https_req: Minimum free heap size: 101664 bytes[0m
+[0;32mI (56155) https_req: Finish https_request[0m
+[0;32mI (58495) wifi:state: run -> init (0)[0m
+[0;32mI (58505) wifi:pm stop, total sleep time: 17497301 us / 23830694 us[0m
+
+[0;32mI (58505) wifi:<ba-del>idx:0, tid:0[0m
+[0;32mI (58505) wifi:<ba-del>idx:1, tid:2[0m
+[0;32mI (58505) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (58755) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (58755) wifi:state: init -> auth (b0)[0m
+[0;32mI (58765) wifi:state: auth -> assoc (0)[0m
+[0;32mI (58795) wifi:state: assoc -> run (10)[0m
+[0;32mI (58815) wifi:connected with Apple100, aid = 8, channel 11, BW20, bssid = a6:4f:fd:7a:2e:5b[0m
+[0;32mI (58815) wifi:security: WPA2-PSK, phy: bgn, rssi: -40[0m
+[0;32mI (58825) wifi:pm start, type: 1[0m
+
+[0;32mI (58825) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (58835) myWIFI: conneted success![0m
+[0;32mI (58865) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (58875) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (59835) esp_netif_handlers: sta ip: 192.168.43.221, mask: 255.255.255.0, gw: 192.168.43.1[0m
+[0;32mI (59835) myWIFI: WIFI GOT IP[0m
+[0;32mI (60665) wifi:state: run -> init (0)[0m
+[0;32mI (60675) wifi:pm stop, total sleep time: 1532923 us / 1848940 us[0m
+
+[0;32mI (60675) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (62155) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (62155) wifi:state: init -> auth (b0)[0m
+[0;32mI (62165) wifi:state: auth -> assoc (0)[0m
+[0;32mI (62175) wifi:state: assoc -> run (10)[0m
+[0;32mI (62205) wifi:connected with Apple100, aid = 9, channel 11, BW20, bssid = a6:4f:fd:7a:2e:5b[0m
+[0;32mI (62205) wifi:security: WPA2-PSK, phy: bgn, rssi: -36[0m
+[0;32mI (62215) wifi:pm start, type: 1[0m
+
+[0;32mI (62215) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (62225) myWIFI: conneted success![0m
+[0;32mI (62245) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (62245) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (62295) wifi:state: run -> init (0)[0m
+[0;32mI (62305) wifi:pm stop, total sleep time: 0 us / 91196 us[0m
+
+[0;32mI (62305) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (63115) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (63115) wifi:state: init -> auth (b0)[0m
+[0;32mI (63125) wifi:state: auth -> assoc (0)[0m
+[0;32mI (63155) wifi:state: assoc -> run (10)[0m
+[0;32mI (63185) wifi:connected with Apple100, aid = 5, channel 11, BW20, bssid = a6:4f:fd:7a:2e:5b[0m
+[0;32mI (63185) wifi:security: WPA2-PSK, phy: bgn, rssi: -39[0m
+[0;32mI (63195) wifi:pm start, type: 1[0m
+
+[0;32mI (63195) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (63205) myWIFI: conneted success![0m
+[0;32mI (63275) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (63275) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (64205) esp_netif_handlers: sta ip: 192.168.43.221, mask: 255.255.255.0, gw: 192.168.43.1[0m
+[0;32mI (64205) myWIFI: WIFI GOT IP[0m
+[0;32mI (99145) myNTP: tim_write_into_nvs successful[0m
+[0;32mI (99145) myNTP: 2th: The current date/time in BeiJing is: Sat Feb 15 00:08:26 2025[0m
+[0;32mI (159195) myNTP: tim_write_into_nvs successful[0m
+[0;32mI (159195) myNTP: 3th: The current date/time in BeiJing is: Sat Feb 15 00:09:26 2025[0m
+after sync tim_stamp: 1739549426
+[0;32mI (219145) myNTP: tim_write_into_nvs successful[0m
+[0;32mI (219145) myNTP: 4th: The current date/time in BeiJing is: Sat Feb 15 00:10:26 2025[0m
+[0;32mI (219145) myNTP: Updated time in NVS[0m
+Guru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x401a81c9  PS      : 0x00060730  A0      : 0x800e9519  A1      : 0x3ffd40a0  
+A2      : 0x9a1d722e  A3      : 0x3ffd1540  A4      : 0x00000000  A5      : 0x0000003c  
+A6      : 0x0000007a  A7      : 0x3ffd4058  A8      : 0x00000045  A9      : 0x0000001e  
+A10     : 0x0000003c  A11     : 0x0000003c  A12     : 0x0000003c  A13     : 0x00000000  
+A14     : 0x0000005a  A15     : 0x00000000  SAR     : 0x00000020  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x9a1d7232  LBEG    : 0x400013f9  LEND    : 0x4000140d  LCOUNT  : 0xfffffffe  
+
+
+Backtrace: 0x401a81c6:0x3ffd40a0 0x400e9516:0x3ffd40c0 0x400e952b:0x3ffd40e0 0x400e5d6d:0x3ffd4100 0x400e5df1:0x3ffd4130 0x400f0ba1:0x3ffd4160 0x400d9115:0x3ffd41a0 0x400d91cd:0x3ffd41e0 0x400d779d:0x3ffd4230 0x400d784a:0x3ffd4250 0x400d73ca:0x3ffd4270 0x4008c52d:0x3ffd4290
+
+
+
+
+ELF file SHA256: 30861dfcb
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.3-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Feb 13 2025 13:01:37[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00200000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=75a24h (481828) map[0m
+[0;32mI (270) esp_image: segment 1: paddr=00085a4c vaddr=3ffb0000 size=043cch ( 17356) load[0m
+[0;32mI (276) esp_image: segment 2: paddr=00089e20 vaddr=40080000 size=061f8h ( 25080) load[0m
+[0;32mI (286) esp_image: segment 3: paddr=00090020 vaddr=400d0020 size=e3568h (931176) map[0m
+[0;32mI (606) esp_image: segment 4: paddr=00173590 vaddr=400861f8 size=14368h ( 82792) load[0m
+[0;32mI (638) esp_image: segment 5: paddr=00187900 vaddr=50000000 size=00004h (     4) load[0m
+[0;32mI (652) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (652) boot: Disabling RNG early entropy source...[0m
+[0;32mI (663) cpu_start: Multicore app[0m
+[0;32mI (673) cpu_start: Pro cpu start user code[0m
+[0;32mI (673) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (673) cpu_start: Application information:[0m
+[0;32mI (676) cpu_start: Project name:     zproj_SmartWatch[0m
+[0;32mI (681) cpu_start: App version:      1[0m
+[0;32mI (686) cpu_start: Compile time:     Feb 13 2025 13:04:33[0m
+[0;32mI (692) cpu_start: ELF file SHA256:  30861dfcb...[0m
+[0;32mI (697) cpu_start: ESP-IDF:          v5.2.3-dirty[0m
+[0;32mI (703) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (707) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (712) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (717) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (724) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (730) heap_init: At 3FFB97F0 len 00026810 (154 KiB): DRAM[0m
+[0;32mI (736) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (743) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (749) heap_init: At 4009A560 len 00005AA0 (22 KiB): IRAM[0m
+[0;32mI (757) spi_flash: detected chip: generic[0m
+[0;32mI (760) spi_flash: flash io: dio[0m
+[0;33mW (764) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (775) main_task: Started on CPU0[0m
+[0;32mI (785) main_task: Calling app_main()[0m
+[0;32mI (815) wifi:wifi driver task: 3ffc1840, prio:23, stack:6656, core=0[0m
+[0;32mI (825) wifi:wifi firmware version: 82f54d2[0m
+[0;32mI (825) wifi:wifi certification version: v7.0[0m
+[0;32mI (825) wifi:config NVS flash: enabled[0m
+[0;32mI (825) wifi:config nano formating: disabled[0m
+[0;32mI (835) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (835) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (835) wifi:Init management short buffer num: 32[0m
+[0;32mI (845) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (845) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (855) wifi:Init static rx buffer num: 10[0m
+[0;32mI (855) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (865) wifi_init: rx ba win: 6[0m
+[0;32mI (865) wifi_init: tcpip mbox: 32[0m
+[0;32mI (865) wifi_init: udp mbox: 6[0m
+[0;32mI (875) wifi_init: tcp mbox: 6[0m
+[0;32mI (875) wifi_init: tcp tx win: 5760[0m
+[0;32mI (875) wifi_init: tcp rx win: 5760[0m
+[0;32mI (885) wifi_init: tcp mss: 1440[0m
+[0;32mI (885) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (895) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (895) wifi:Password length is zero, but authmode threshold is 3, making it impossible to connect to an AP with authmode OPEN[0m
+[0;32mI (945) sdcard: Using SPI peripheral[0m
+[0;32mI (945) sdcard: Mounting filesystem[0m
+[0;32mI (955) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (1155) sdmmc_sd: sdmmc_init_sd_if_cond: send_if_cond (1) returned 0x108[0m
+[0;31mE (1155) vfs_fat_sdmmc: sdmmc_card_init failed (0x108).[0m
+[0;32mI (1155) gpio: GPIO[13]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1165) sdcard: SDcard mount failed![0m
+[0;32mI (1165) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1175) gpio: GPIO[21]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1185) st7789: create esp_lcd_new_panel[0m
+[0;32mI (1195) gpio: GPIO[17]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (2035) cst816t: 	Chip ID: 0xb5[0m
+[0;32mI (2035) cst816t: 	Firmware version: 0x01[0m
+[0;32mI (2035) cst816t: 	Factory ID: 0x04[0m
+[0;32mI (87265) phy_init: phy_version 4840,a40f0ac,Aug 16 2024,16:48:06[0m
+[0;32mI (87345) wifi:mode : sta (ec:64:c9:90:7a:94)[0m
+[0;32mI (87345) wifi:enable tsf[0m
+[0;32mI (87405) smartconfig: SC version: V3.0.1[0m
+[0;32mI (87405) myWIFI: smartconfig  has started![0m
+[0;32mI (92255) wifi:ic_enable_sniffer[0m
+[0;32mI (92255) smartconfig: Start to find channel...[0m
+[0;32mI (92255) myWIFI: Scan done[0m
+[0;32mI (94585) smartconfig: TYPE: ESPTOUCH[0m
+[0;32mI (94585) smartconfig: T|AP MAC: a6:4f:fd:7a:2e:5b[0m
+[0;32mI (94585) smartconfig: Found channel on 11-0. Start to get ssid and password...[0m
+[0;32mI (94595) myWIFI: Found channel[0m
+[0;32mI (96035) smartconfig: TYPE: ESPTOUCH[0m
+[0;32mI (96035) smartconfig: Found channel on 11-0. Start to get ssid and password...[0m
+[0;32mI (96045) myWIFI: Found channel[0m
+[0;32mI (97405) smartconfig: T|pswd: Cc.246850@[0m
+[0;32mI (97405) smartconfig: T|ssid: Apple100[0m
+[0;32mI (97405) smartconfig: T|bssid: a6:4f:fd:7a:2e:5b[0m
+[0;32mI (97405) wifi:ic_disable_sniffer[0m
+[0;32mI (97415) myWIFI: Got SSID and password[0m
+[0;33mW (97415) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (97745) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (97755) wifi:state: init -> auth (b0)[0m
+[0;32mI (97755) wifi:state: auth -> assoc (0)[0m
+[0;32mI (97765) wifi:state: assoc -> run (10)[0m
+[0;32mI (97805) wifi:connected with Apple100, aid = 1, channel 11, BW20, bssid = a6:4f:fd:7a:2e:5b[0m
+[0;32mI (97805) wifi:security: WPA2-PSK, phy: bgn, rssi: -40[0m
+[0;32mI (97815) wifi:pm start, type: 1[0m
+
+[0;32mI (97815) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (97815) myWIFI: conneted success![0m
+[0;32mI (97885) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (97885) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (98815) esp_netif_handlers: sta ip: 192.168.43.221, mask: 255.255.255.0, gw: 192.168.43.1[0m
+[0;32mI (98815) myWIFI: WIFI GOT IP[0m
+[0;32mI (98995) wifi:<ba-add>idx:0 (ifx:0, a6:4f:fd:7a:2e:5b), tid:0, ssn:1, winSize:64[0m
+[0;32mI (99165) myNTP: mySntp start[0m
+[0;32mI (99165) myNTP: Boot count: 1[0m
+[0;32mI (99165) myNTP: Time is not set yet. Connecting to WiFi and getting time over NTP.[0m
+[0;32mI (99165) myNTP: Initializing SNTP[0m
+[0;32mI (99165) myNTP: Starting SNTP[0m
+[0;32mI (99175) myNTP: List of configured NTP servers:[0m
+[0;32mI (99175) myNTP: server 0: cn.pool.ntp.org[0m
+[0;32mI (99185) myNTP: server 1: time.windows.com[0m
+[0;32mI (99185) myNTP: server 2: ntp.sjtu.edu.cn[0m
+[0;32mI (99195) https_req: Start 1th https_request[0m
+[0;32mI (99195) https_req: https_request using crt bundle[0m
+[0;32mI (99475) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (100005) https_req: Connection established...[0m
+[0;32mI (100005) https_req: 193 bytes written[0m
+[0;32mI (100005) https_req: Reading HTTP response...[0m
+HTTP/1.1 200 OK
+Date: Fri, 14 Feb 2025 16:12:06 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 1006
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"3ee-yw5b+Nna+n4Gd9/h3hbcEa/363A"
+x-powered-by: Express
+x-ratelimit-limit: 20;w=60
+x-ratelimit-remaining: 19
+x-ratelimit-reset: 60.000
+x-request-id: GCQfE+8SRh2ONNlMLnHD
+x-tenant-id: 0a2eb6f6-2727-482d-a691-e6d0848af3d9
+
+广州 2025-02-15 9 temperature:15~24
+广州 2025-02-16 9 temperature:14~23
+广州 2025-02-17 4 temperature:14~24
+[0;32mI (101195) myNTP: Waiting for system time to be set... (1/15)[0m
+[0;32mI (101585) wifi:<ba-add>idx:1 (ifx:0, a6:4f:fd:7a:2e:5b), tid:2, ssn:0, winSize:64[0m
+[0;32mI (101585) myNTP: Notification of a time synchronization event[0m
+after sync tim_stamp: 1739549527
+[0;32mI (101595) myNTP: tim_write_into_nvs successful[0m
+[0;32mI (101595) myNTP: 1th: The current date/time in BeiJing is: Sat Feb 15 00:12:07 2025[0m
+[0;32mI (101605) main: mySntp_done, Beijing time was successfully obtained[0m
+[0;32mI (101875) myWIFI: WiFi Connected to ap[0m
+[0;32mI (101875) myWIFI: smartconfig over[0m
+[0;32mI (105175) https_req: connection closed[0m
+[0;32mI (105175) https_req: 10...[0m
+[0;32mI (106175) https_req: 9...[0m
+[0;32mI (107175) https_req: 8...[0m
+[0;32mI (108175) https_req: 7...[0m
+[0;32mI (109175) https_req: 6...[0m
+[0;32mI (110175) https_req: 5...[0m
+[0;32mI (111175) https_req: 4...[0m
+[0;32mI (112175) https_req: 3...[0m
+[0;32mI (113175) https_req: 2...[0m
+[0;32mI (114175) https_req: 1...[0m
+[0;32mI (115175) https_req: 0...[0m
+[0;32mI (116175) https_req: Minimum free heap size: 101824 bytes[0m
+[0;32mI (116175) https_req: Finish https_request[0m
+[0;32mI (159175) myNTP: tim_write_into_nvs successful[0m
+[0;32mI (159175) myNTP: 2th: The current date/time in BeiJing is: Sat Feb 15 00:13:05 2025[0m
+[0;32mI (163585) wifi:bcn_timeout,ap_probe_send_start[0m
+[0;32mI (166095) wifi:ap_probe_send over, resett wifi status to disassoc[0m
+[0;32mI (166095) wifi:state: run -> init (c800)[0m
+[0;32mI (166105) wifi:pm stop, total sleep time: 54805525 us / 68288022 us[0m
+
+[0;32mI (166105) wifi:<ba-del>idx:0, tid:0[0m
+[0;32mI (166105) wifi:<ba-del>idx:1, tid:2[0m
+[0;32mI (166105) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (194095) wifi:new:<9,0>, old:<11,0>, ap:<255,255>, sta:<9,0>, prof:1[0m
+[0;32mI (194095) wifi:state: init -> auth (b0)[0m
+[0;32mI (194105) wifi:state: auth -> assoc (0)[0m
+[0;32mI (194115) wifi:state: assoc -> run (10)[0m
+[0;32mI (194145) wifi:connected with Apple100, aid = 10, channel 9, BW20, bssid = a6:4f:fd:7a:2e:5b[0m
+[0;32mI (194145) wifi:security: WPA2-PSK, phy: bgn, rssi: -38[0m
+[0;32mI (194205) wifi:pm start, type: 1[0m
+
+[0;32mI (194205) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (194205) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (194215) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (194225) myWIFI: conneted success![0m
+[0;32mI (195225) esp_netif_handlers: sta ip: 192.168.43.221, mask: 255.255.255.0, gw: 192.168.43.1[0m
+[0;32mI (195225) myWIFI: WIFI GOT IP[0m
+[0;32mI (219175) myNTP: tim_write_into_nvs successful[0m
+[0;32mI (219175) myNTP: 3th: The current date/time in BeiJing is: Sat Feb 15 00:14:05 2025[0m
+after sync tim_stamp: 1739549705
+[0;32mI (279175) myNTP: tim_write_into_nvs successful[0m
+[0;32mI (279175) myNTP: 4th: The current date/time in BeiJing is: Sat Feb 15 00:15:05 2025[0m
+[0;32mI (279175) myNTP: Updated time in NVS[0m
+Guru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x401a81c9  PS      : 0x00060d30  A0      : 0x800e9519  A1      : 0x3ffd40a0  
+A2      : 0x9a1d722e  A3      : 0x3ffd1540  A4      : 0x00000000  A5      : 0x0000003c  
+A6      : 0x0000007a  A7      : 0x3ffd4058  A8      : 0x00000045  A9      : 0x0000001e  
+A10     : 0x0000003c  A11     : 0x0000003c  A12     : 0x0000003c  A13     : 0x00000000  
+A14     : 0x0000005a  A15     : 0x00000000  SAR     : 0x00000020  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x9a1d7232  LBEG    : 0x400013f9  LEND    : 0x4000140d  LCOUNT  : 0xfffffffe  
+
+
+Backtrace: 0x401a81c6:0x3ffd40a0 0x400e9516:0x3ffd40c0 0x400e952b:0x3ffd40e0 0x400e5d6d:0x3ffd4100 0x400e5df1:0x3ffd4130 0x400f0ba1:0x3ffd4160 0x400d9115:0x3ffd41a0 0x400d91cd:0x3ffd41e0 0x400d779d:0x3ffd4230 0x400d784a:0x3ffd4250 0x400d73ca:0x3ffd4270 0x4008c52d:0x3ffd4290
+
+
+
+
+ELF file SHA256: 30861dfcb
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.3-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Feb 13 2025 13:01:37[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00200000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=75a24h (481828) map[0m
+[0;32mI (270) esp_image: segment 1: paddr=00085a4c vaddr=3ffb0000 size=043cch ( 17356) load[0m
+[0;32mI (276) esp_image: segment 2: paddr=00089e20 vaddr=40080000 size=061f8h ( 25080) load[0m
+[0;32mI (286) esp_image: segment 3: paddr=00090020 vaddr=400d0020 size=e3568h (931176) map[0m
+[0;32mI (606) esp_image: segment 4: paddr=00173590 vaddr=400861f8 size=14368h ( 82792) load[0m
+[0;32mI (638) esp_image: segment 5: paddr=00187900 vaddr=50000000 size=00004h (     4) load[0m
+[0;32mI (652) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (652) boot: Disabling RNG early entropy source...[0m
+[0;32mI (663) cpu_start: Multicore app[0m
+[0;32mI (673) cpu_start: Pro cpu start user code[0m
+[0;32mI (673) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (673) cpu_start: Application information:[0m
+[0;32mI (676) cpu_start: Project name:     zproj_SmartWatch[0m
+[0;32mI (681) cpu_start: App version:      1[0m
+[0;32mI (686) cpu_start: Compile time:     Feb 13 2025 13:04:33[0m
+[0;32mI (692) cpu_start: ELF file SHA256:  30861dfcb...[0m
+[0;32mI (697) cpu_start: ESP-IDF:          v5.2.3-dirty[0m
+[0;32mI (703) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (707) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (712) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (717) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (724) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (730) heap_init: At 3FFB97F0 len 00026810 (154 KiB): DRAM[0m
+[0;32mI (736) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (743) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (749) heap_init: At 4009A560 len 00005AA0 (22 KiB): IRAM[0m
+[0;32mI (757) spi_flash: detected chip: generic[0m
+[0;32mI (760) spi_flash: flash io: dio[0m
+[0;33mW (764) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (775) main_task: Started on CPU0[0m
+[0;32mI (785) main_task: Calling app_main()[0m
+[0;32mI (815) wifi:wifi driver task: 3ffc1840, prio:23, stack:6656, core=0[0m
+[0;32mI (825) wifi:wifi firmware version: 82f54d2[0m
+[0;32mI (825) wifi:wifi certification version: v7.0[0m
+[0;32mI (825) wifi:config NVS flash: enabled[0m
+[0;32mI (825) wifi:config nano formating: disabled[0m
+[0;32mI (835) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (835) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (835) wifi:Init management short buffer num: 32[0m
+[0;32mI (845) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (845) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (855) wifi:Init static rx buffer num: 10[0m
+[0;32mI (855) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (865) wifi_init: rx ba win: 6[0m
+[0;32mI (865) wifi_init: tcpip mbox: 32[0m
+[0;32mI (865) wifi_init: udp mbox: 6[0m
+[0;32mI (875) wifi_init: tcp mbox: 6[0m
+[0;32mI (875) wifi_init: tcp tx win: 5760[0m
+[0;32mI (875) wifi_init: tcp rx win: 5760[0m
+[0;32mI (885) wifi_init: tcp mss: 1440[0m
+[0;32mI (885) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (895) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (895) wifi:Password length is zero, but authmode threshold is 3, making it impossible to connect to an AP with authmode OPEN[0m
+[0;32mI (945) sdcard: Using SPI peripheral[0m
+[0;32mI (945) sdcard: Mounting filesystem[0m
+[0;32mI (955) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (1155) sdmmc_sd: sdmmc_init_sd_if_cond: send_if_cond (1) returned 0x108[0m
+[0;31mE (1155) vfs_fat_sdmmc: sdmmc_card_init failed (0x108).[0m
+[0;32mI (1155) gpio: GPIO[13]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1165) sdcard: SDcard mount failed![0m
+[0;32mI (1165) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1175) gpio: GPIO[21]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1185) st7789: create esp_lcd_new_panel[0m
+[0;32mI (1195) gpio: GPIO[17]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (2035) cst816t: 	Chip ID: 0xb5[0m
+[0;32mI (2035) cst816t: 	Firmware version: 0x01[0m
+[0;32mI (2035) cst816t: 	Factory ID: 0x04[0m

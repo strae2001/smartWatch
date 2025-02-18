@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "D:/MyCode/esp32/esp32e_code/zproj_SmartWatch/build/CMakeFiles/bootloader"
+		},
+		{
+			"file" : "D:/MyCode/esp32/esp32e_code/zproj_SmartWatch/build/CMakeFiles/bootloader.rule"
+		},
+		{
+			"file" : "D:/MyCode/esp32/esp32e_code/zproj_SmartWatch/build/CMakeFiles/bootloader-complete.rule"
+		},
+		{
+			"file" : "D:/MyCode/esp32/esp32e_code/zproj_SmartWatch/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule"
+		},
+		{
+			"file" : "D:/MyCode/esp32/esp32e_code/zproj_SmartWatch/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule"
+		},
+		{
+			"file" : "D:/MyCode/esp32/esp32e_code/zproj_SmartWatch/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule"
+		},
+		{
+			"file" : "D:/MyCode/esp32/esp32e_code/zproj_SmartWatch/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule"
+		},
+		{
+			"file" : "D:/MyCode/esp32/esp32e_code/zproj_SmartWatch/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule"
+		},
+		{
+			"file" : "D:/MyCode/esp32/esp32e_code/zproj_SmartWatch/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule"
+		},
+		{
+			"file" : "D:/MyCode/esp32/esp32e_code/zproj_SmartWatch/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"bootloader"
+		],
+		"name" : "bootloader"
+	}
+}

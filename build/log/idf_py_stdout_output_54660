@@ -1,0 +1,105 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D D:\MyCode\esp32\esp32e_code\zproj_SmartWatch\build\bootloader\esp-idf\esptool_py && d:\Environment_file\esp32\.espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe D:/Environment_file/esp32/v5.2.3/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 D:/MyCode/esp32/esp32e_code/zproj_SmartWatch/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6860 bytes. 0x7a0 bytes (7%) free.
+[2/8] Building C object esp-idf/com/CMakeFiles/__idf_com.dir/Ntp_time.c.obj
+[3/8] Linking C static library esp-idf\com\libcom.a
+[4/8] Generating ld/sections.ld
+[5/8] Linking CXX executable zproj_SmartWatch.elf
+[6/8] Generating binary image from built executable
+esptool.py v4.8.1
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated D:/MyCode/esp32/esp32e_code/zproj_SmartWatch/build/zproj_SmartWatch.bin
+[7/8] cmd.exe /C "cd /D D:\MyCode\esp32\esp32e_code\zproj_SmartWatch\build\esp-idf\esptool_py && d:\Environment_file\esp32\.espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe D:/Environment_file/esp32/v5.2.3/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/MyCode/esp32/esp32e_code/zproj_SmartWatch/build/partition_table/partition-table.bin D:/MyCode/esp32/esp32e_code/zproj_SmartWatch/build/zproj_SmartWatch.bin"
+zproj_SmartWatch.bin binary size 0x175ce0 bytes. Smallest app partition is 0x200000 bytes. 0x8a320 bytes (27%) free.
+[7/8] cmd.exe /C "cd /D D:\Environment_file\esp32\v5.2.3\esp-idf\components\esptool_py && D:\Environment_file\esp32\.espressif\tools\cmake\3.24.0\bin\cmake.exe -D IDF_PATH=D:/Environment_file/esp32/v5.2.3/esp-idf -D SERIAL_TOOL=d:/Environment_file/esp32/.espressif/python_env/idf5.2_py3.11_env/Scripts/python.exe;;D:/Environment_file/esp32/v5.2.3/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=D:/MyCodeesptool.py --chip esp32 -p COM4 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 4MB 0x1000 bootloader/bootloader.bin 0x10000 zproj_SmartWatch.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.8.1
+Serial port COM4
+Connecting.........
+Chip is ESP32-D0WD-V3 (revision v3.1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: ec:64:c9:90:7a:94
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x00185fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 26720 bytes to 16349...
+Writing at 0x00001000... (100 %)
+Wrote 26720 bytes (16349 compressed) at 0x00001000 in 0.8 seconds (effective 267.8 kbit/s)...
+Hash of data verified.
+Compressed 1531104 bytes to 918656...
+Writing at 0x00010000... (1 %)
+Writing at 0x0001d40c... (3 %)
+Writing at 0x000291e4... (5 %)
+Writing at 0x00030747... (7 %)
+Writing at 0x0003961b... (8 %)
+Writing at 0x000439e2... (10 %)
+Writing at 0x0005064f... (12 %)
+Writing at 0x000610d2... (14 %)
+Writing at 0x00065bf9... (15 %)
+Writing at 0x0006aec0... (17 %)
+Writing at 0x00070a2d... (19 %)
+Writing at 0x000768ad... (21 %)
+Writing at 0x0007bd89... (22 %)
+Writing at 0x00087d0c... (24 %)
+Writing at 0x0008dc94... (26 %)
+Writing at 0x00093812... (28 %)
+Writing at 0x00099222... (29 %)
+Writing at 0x0009ec37... (31 %)
+Writing at 0x000a4a73... (33 %)
+Writing at 0x000aae38... (35 %)
+Writing at 0x000b09db... (36 %)
+Writing at 0x000b6a9a... (38 %)
+Writing at 0x000bd044... (40 %)
+Writing at 0x000c2a5e... (42 %)
+Writing at 0x000c8559... (43 %)
+Writing at 0x000cec41... (45 %)
+Writing at 0x000d4d24... (47 %)
+Writing at 0x000dabc8... (49 %)
+Writing at 0x000e05eb... (50 %)
+Writing at 0x000e633c... (52 %)
+Writing at 0x000ec1a1... (54 %)
+Writing at 0x000f1fa3... (56 %)
+Writing at 0x000f7bdf... (57 %)
+Writing at 0x000fd93b... (59 %)
+Writing at 0x00103fd3... (61 %)
+Writing at 0x00109b2f... (63 %)
+Writing at 0x0010f6eb... (64 %)
+Writing at 0x00114c5b... (66 %)
+Writing at 0x0011a019... (68 %)
+Writing at 0x0011f49b... (70 %)
+Writing at 0x001247fb... (71 %)
+Writing at 0x00129e77... (73 %)
+Writing at 0x0012f575... (75 %)
+Writing at 0x0013522d... (77 %)
+Writing at 0x0013ad84... (78 %)
+Writing at 0x001403e8... (80 %)
+Writing at 0x00145dbe... (82 %)
+Writing at 0x0014bab5... (84 %)
+Writing at 0x001514ee... (85 %)
+Writing at 0x00156a72... (87 %)
+Writing at 0x0015d805... (89 %)
+Writing at 0x0016798a... (91 %)
+Writing at 0x0016e37b... (92 %)
+Writing at 0x001740a4... (94 %)
+Writing at 0x00179f79... (96 %)
+Writing at 0x0017ff26... (98 %)
+Writing at 0x0018552a... (100 %)
+Wrote 1531104 bytes (918656 compressed) at 0x00010000 in 21.5 seconds (effective 569.5 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 104...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (104 compressed) at 0x00008000 in 0.1 seconds (effective 378.0 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
+/esp32/esp32e_code/zproj_SmartWatch/build -P D:/Environment_file/esp32/v5.2.3/esp-idf/components/esptool_py/run_serial_tool.cmake"

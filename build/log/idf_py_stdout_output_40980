@@ -1,0 +1,427 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.3-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Feb 13 2025 13:01:37[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00200000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=74054h (475220) map[0m
+[0;32mI (268) esp_image: segment 1: paddr=0008407c vaddr=3ffb0000 size=043cch ( 17356) load[0m
+[0;32mI (274) esp_image: segment 2: paddr=00088450 vaddr=40080000 size=07bc8h ( 31688) load[0m
+[0;32mI (287) esp_image: segment 3: paddr=00090020 vaddr=400d0020 size=e3240h (930368) map[0m
+[0;32mI (606) esp_image: segment 4: paddr=00173268 vaddr=40087bc8 size=12998h ( 76184) load[0m
+[0;32mI (636) esp_image: segment 5: paddr=00185c08 vaddr=50000000 size=00004h (     4) load[0m
+[0;32mI (649) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (649) boot: Disabling RNG early entropy source...[0m
+[0;32mI (661) cpu_start: Multicore app[0m
+[0;32mI (670) cpu_start: Pro cpu start user code[0m
+[0;32mI (670) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (670) cpu_start: Application information:[0m
+[0;32mI (673) cpu_start: Project name:     zproj_SmartWatch[0m
+[0;32mI (679) cpu_start: App version:      1[0m
+[0;32mI (683) cpu_start: Compile time:     Feb 13 2025 13:04:33[0m
+[0;32mI (689) cpu_start: ELF file SHA256:  2d1096194...[0m
+[0;32mI (695) cpu_start: ESP-IDF:          v5.2.3-dirty[0m
+[0;32mI (700) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (705) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (710) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (715) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (722) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (728) heap_init: At 3FFB9610 len 000269F0 (154 KiB): DRAM[0m
+[0;32mI (734) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (740) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (747) heap_init: At 4009A560 len 00005AA0 (22 KiB): IRAM[0m
+[0;32mI (755) spi_flash: detected chip: generic[0m
+[0;32mI (758) spi_flash: flash io: dio[0m
+[0;33mW (762) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (773) main_task: Started on CPU0[0m
+[0;32mI (783) main_task: Calling app_main()[0m
+[0;32mI (813) wifi:wifi driver task: 3ffc1660, prio:23, stack:6656, core=0[0m
+[0;32mI (823) wifi:wifi firmware version: 82f54d2[0m
+[0;32mI (823) wifi:wifi certification version: v7.0[0m
+[0;32mI (823) wifi:config NVS flash: enabled[0m
+[0;32mI (823) wifi:config nano formating: disabled[0m
+[0;32mI (833) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (833) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (833) wifi:Init management short buffer num: 32[0m
+[0;32mI (843) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (843) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (853) wifi:Init static rx buffer num: 10[0m
+[0;32mI (853) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (863) wifi_init: rx ba win: 6[0m
+[0;32mI (863) wifi_init: tcpip mbox: 32[0m
+[0;32mI (863) wifi_init: udp mbox: 6[0m
+[0;32mI (873) wifi_init: tcp mbox: 6[0m
+[0;32mI (873) wifi_init: tcp tx win: 5760[0m
+[0;32mI (873) wifi_init: tcp rx win: 5760[0m
+[0;32mI (883) wifi_init: tcp mss: 1440[0m
+[0;32mI (883) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (893) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (893) wifi:Password length is zero, but authmode threshold is 3, making it impossible to connect to an AP with authmode OPEN[0m
+[0;32mI (903) sdcard: Using SPI peripheral[0m
+[0;32mI (913) sdcard: Mounting filesystem[0m
+[0;32mI (913) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (1123) sdmmc_sd: sdmmc_init_sd_if_cond: send_if_cond (1) returned 0x108[0m
+[0;31mE (1123) vfs_fat_sdmmc: sdmmc_card_init failed (0x108).[0m
+[0;32mI (1123) gpio: GPIO[13]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1133) sdcard: SDcard mount failed![0m
+[0;32mI (1133) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1143) gpio: GPIO[21]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1153) st7789: create esp_lcd_new_panel[0m
+[0;32mI (1163) gpio: GPIO[17]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (2003) cst816t: 	Chip ID: 0xb5[0m
+[0;32mI (2003) cst816t: 	Firmware version: 0x01[0m
+[0;32mI (2003) cst816t: 	Factory ID: 0x04[0m
+[0;32mI (67853) phy_init: phy_version 4840,a40f0ac,Aug 16 2024,16:48:06[0m
+[0;32mI (67943) wifi:mode : sta (ec:64:c9:90:7a:94)[0m
+[0;32mI (67943) wifi:enable tsf[0m
+[0;32mI (67993) smartconfig: SC version: V3.0.1[0m
+[0;32mI (67993) myWIFI: smartconfig  has started![0m
+[0;32mI (72833) wifi:ic_enable_sniffer[0m
+[0;32mI (72833) smartconfig: Start to find channel...[0m
+[0;32mI (72833) myWIFI: Scan done[0m
+[0;32mI (73033) smartconfig: TYPE: ESPTOUCH[0m
+[0;32mI (73033) smartconfig: T|AP MAC: f6:b9:58:d6:0d:36[0m
+[0;32mI (73033) smartconfig: Found channel on 10-0. Start to get ssid and password...[0m
+[0;32mI (73033) myWIFI: Found channel[0m
+[0;32mI (73863) smartconfig: T|pswd: Cc.246850@[0m
+[0;32mI (73863) smartconfig: T|ssid: Honor100[0m
+[0;32mI (73863) smartconfig: T|bssid: f6:b9:58:d6:0d:36[0m
+[0;32mI (73863) wifi:ic_disable_sniffer[0m
+[0;32mI (73873) myWIFI: Got SSID and password[0m
+[0;33mW (73873) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (75293) wifi:new:<10,0>, old:<10,0>, ap:<255,255>, sta:<10,0>, prof:1[0m
+[0;32mI (75303) wifi:state: init -> auth (b0)[0m
+[0;32mI (75303) wifi:state: auth -> assoc (0)[0m
+[0;32mI (75313) wifi:state: assoc -> run (10)[0m
+[0;32mI (75403) wifi:connected with Honor100, aid = 6, channel 10, BW20, bssid = f6:b9:58:d6:0d:36[0m
+[0;32mI (75403) wifi:security: WPA2-PSK, phy: bgn, rssi: -37[0m
+[0;32mI (75463) wifi:pm start, type: 1[0m
+
+[0;32mI (75463) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (75473) myWIFI: conneted success![0m
+[0;32mI (75483) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (75483) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (77983) wifi:<ba-add>idx:0 (ifx:0, f6:b9:58:d6:0d:36), tid:0, ssn:0, winSize:64[0m
+[0;32mI (78973) esp_netif_handlers: sta ip: 192.168.43.221, mask: 255.255.255.0, gw: 192.168.43.1[0m
+[0;32mI (78973) myWIFI: WIFI GOT IP[0m
+[0;32mI (79013) myNTP: mySntp start[0m
+[0;32mI (79013) myNTP: Boot count: 1[0m
+[0;32mI (79013) myNTP: Time is not set yet. Connecting to WiFi and getting time over NTP.[0m
+[0;32mI (79013) myNTP: Initializing SNTP[0m
+[0;32mI (79013) myNTP: Starting SNTP[0m
+[0;32mI (79023) myNTP: List of configured NTP servers:[0m
+[0;32mI (79023) myNTP: server 0: cn.pool.ntp.org[0m
+[0;32mI (79033) myNTP: server 1: time.windows.com[0m
+[0;32mI (79033) myNTP: server 2: ntp.sjtu.edu.cn[0m
+[0;32mI (79043) https_req: Start 1th https_request[0m
+[0;32mI (79043) https_req: Updating time from NVS[0m
+time in nvs:1739459278
+[0;32mI (79053) https_req: https_request using crt bundle[0m
+[0;32mI (81043) myNTP: Waiting for system time to be set... (1/15)[0m
+[0;32mI (81043) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (81613) https_req: Connection established...[0m
+[0;32mI (81613) https_req: 193 bytes written[0m
+[0;32mI (81613) https_req: Reading HTTP response...[0m
+HTTP/1.1 200 OK
+Date: Fri, 14 Feb 2025 02:20:38 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 1023
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"3ff-UoIiQtX2XbDXFnwoqT8HatKaaII"
+x-powered-by: Express
+x-ratelimit-limit: 20;w=60
+x-ratelimit-remaining: 19
+x-ratelimit-reset: 60.000
+x-request-id: GCPxtHgiKhKrm1yDzO3B
+x-tenant-id: 0a2eb6f6-2727-482d-a691-e6d0848af3d9
+
+{"results":[{"location":{"id":"WS0E9D8WN298","name":"广州","country":"CN","path":"广州,广州,广东,中国","timezone":"Asia/Shanghai","timezone_offset":"+08:00"},"daily":[{"date":"2025-02-14","text_day":"多云","code_day":"4","text_night":"多云","code_night":"4","high":"23","low":"14","rainfall":"0.00","precip":"0.00","wind_direction":"无持续风向","wind_direction_degree":"","wind_speed":"8.4","wind_scale":"2","humidity":"80"},{"date":"2025-02-15","text_day":"多云","code_day":"4","text_night":"多云","code_night":"4","high":"24","low":"15","rainfall":"0.00","precip":"0.00","wind_direction":"无持续风向","wind_direction_degree":"","wind_speed":"8.4","wind_scale":"2","humidity":"77"},{"date":"2025-02-16","text_day":"多云","code_day":"4","text_night":"多云","code_night":"4","high":"25","low":"14","rainfall":"0.00","precip":"0.00","wind_direction":"无持续风向","wind_direction_degree":"","wind_speed":"3.0","wind_scale":"1","humidity":"76"}],"last_update":"2025-02-14T08:00:00+08:00"}]}
+广州 2025-02-14 多云 temperature:14~23
+广州 2025-02-15 多云 temperature:15~24
+广州 2025-02-16 多云 temperature:14~25
+[0;32mI (82053) myWIFI: WiFi Connected to ap[0m
+[0;32mI (82053) myWIFI: smartconfig over[0m
+[0;32mI (82343) myNTP: Notification of a time synchronization event[0m
+after sync tim_stamp: 1739499638
+[0;32mI (82353) myNTP: tim_write_into_nvs successful[0m
+[0;32mI (82353) myNTP: 1th: The current date/time in BeiJing is: Fri Feb 14 10:20:38 2025[0m
+[0;32mI (82353) main: mySntp_done, Beijing time was successfully obtained[0m
+[0;32mI (86883) https_req: connection closed[0m
+[0;32mI (86883) https_req: 10...[0m
+[0;32mI (87883) https_req: 9...[0m
+[0;32mI (88883) https_req: 8...[0m
+[0;32mI (89883) https_req: 7...[0m
+[0;32mI (90883) https_req: 6...[0m
+[0;32mI (91883) https_req: 5...[0m
+[0;32mI (92883) https_req: 4...[0m
+[0;32mI (93883) https_req: 3...[0m
+[0;32mI (94883) https_req: 2...[0m
+[0;32mI (95883) https_req: 1...[0m
+[0;32mI (96883) https_req: 0...[0m
+[0;32mI (97883) https_req: Minimum free heap size: 102820 bytes[0m
+[0;32mI (97883) https_req: Finish https_request[0m
+[0;32mI (139023) myNTP: tim_write_into_nvs successful[0m
+[0;32mI (139023) myNTP: 2th: The current date/time in BeiJing is: Fri Feb 14 10:21:35 2025[0m
+[0;32mI (199023) myNTP: tim_write_into_nvs successful[0m
+[0;32mI (199023) myNTP: 3th: The current date/time in BeiJing is: Fri Feb 14 10:22:35 2025[0m
+[0;32mI (199043) https_req: Start 2th https_request[0m
+[0;32mI (199043) https_req: Updating time from NVS[0m
+time in nvs:1739499755
+[0;32mI (199043) https_req: https_request using crt bundle[0m
+[0;32mI (199573) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (200313) https_req: Connection established...[0m
+[0;32mI (200313) https_req: 193 bytes written[0m
+[0;32mI (200313) https_req: Reading HTTP response...[0m
+HTTP/1.1 200 OK
+Date: Fri, 14 Feb 2025 02:22:37 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 1023
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"3ff-UoIiQtX2XbDXFnwoqT8HatKaaII"
+x-powered-by: Express
+x-ratelimit-limit: 20;w=60
+x-ratelimit-remaining: 19
+x-ratelimit-reset: 60.000
+x-request-id: GCPx0B6fhnroUA/Dz9pC
+x-tenant-id: 0a2eb6f6-2727-482d-a691-e6d0848af3d9
+
+{"results":[{"location":{"id":"WS0E9D8WN298","name":"广州","country":"CN","path":"广州,广州,广东,中国","timezone":"Asia/Shanghai","timezone_offset":"+08:00"},"daily":[{"date":"2025-02-14","text_day":"多云","code_day":"4","text_night":"多云","code_night":"4","high":"23","low":"14","rainfall":"0.00","precip":"0.00","wind_direction":"无持续风向","wind_direction_degree":"","wind_speed":"8.4","wind_scale":"2","humidity":"80"},{"date":"2025-02-15","text_day":"多云","code_day":"4","text_night":"多云","code_night":"4","high":"24","low":"15","rainfall":"0.00","precip":"0.00","wind_direction":"无持续风向","wind_direction_degree":"","wind_speed":"8.4","wind_scale":"2","humidity":"77"},{"date":"2025-02-16","text_day":"多云","code_day":"4","text_night":"多云","code_night":"4","high":"25","low":"14","rainfall":"0.00","precip":"0.00","wind_direction":"无持续风向","wind_direction_degree":"","wind_speed":"3.0","wind_scale":"1","humidity":"76"}],"last_update":"2025-02-14T08:00:00+08:00"}]}
+广州 2025-02-14 多云 temperature:14~23
+广州 2025-02-15 多云 temperature:15~24
+广州 2025-02-16 多云 temperature:14~25
+[0;32mI (205643) https_req: connection closed[0m
+[0;32mI (205643) https_req: 10...[0m
+[0;32mI (206643) https_req: 9...[0m
+[0;32mI (207643) https_req: 8...[0m
+[0;32mI (208643) https_req: 7...[0m
+[0;32mI (209643) https_req: 6...[0m
+[0;32mI (210643) https_req: 5...[0m
+[0;32mI (211643) https_req: 4...[0m
+[0;32mI (212643) https_req: 3...[0m
+[0;32mI (213643) https_req: 2...[0m
+[0;32mI (214643) https_req: 1...[0m
+[0;32mI (215643) https_req: 0...[0m
+[0;32mI (216643) https_req: Minimum free heap size: 102820 bytes[0m
+[0;32mI (216643) https_req: Finish https_request[0m
+[0;32mI (239913) wifi:state: run -> init (0)[0m
+[0;32mI (239923) wifi:pm stop, total sleep time: 153058811 us / 164454490 us[0m
+
+[0;32mI (239923) wifi:<ba-del>idx:0, tid:0[0m
+[0;32mI (239923) wifi:new:<10,0>, old:<10,0>, ap:<255,255>, sta:<10,0>, prof:1[0m
+after sync tim_stamp: 1739499815
+[0;32mI (259023) myNTP: tim_write_into_nvs successful[0m
+[0;32mI (259023) myNTP: 4th: The current date/time in BeiJing is: Fri Feb 14 10:23:35 2025[0m
+[0;32mI (259023) myNTP: Updated time in NVS[0m
+[0;32mI (319023) myNTP: tim_write_into_nvs successful[0m
+[0;32mI (319023) myNTP: 5th: The current date/time in BeiJing is: Fri Feb 14 10:24:35 2025[0m
+[0;32mI (319043) https_req: Start 3th https_request[0m
+[0;32mI (319043) https_req: Updating time from NVS[0m
+time in nvs:1739499875
+[0;32mI (319043) https_req: https_request using crt bundle[0m
+[0;31mE (319053) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (319053) esp-tls: Failed to open new connection[0m
+[0;31mE (319063) https_req: Connection failed...[0m
+[0;32mI (319063) https_req: 10...[0m
+[0;32mI (320073) https_req: 9...[0m
+[0;32mI (321073) https_req: 8...[0m
+[0;32mI (322073) https_req: 7...[0m
+[0;32mI (323073) https_req: 6...[0m
+[0;32mI (324073) https_req: 5...[0m
+[0;32mI (325073) https_req: 4...[0m
+[0;32mI (325293) wifi:new:<10,0>, old:<10,0>, ap:<255,255>, sta:<10,0>, prof:1[0m
+[0;32mI (325293) wifi:state: init -> auth (b0)[0m
+[0;32mI (325303) wifi:state: auth -> assoc (0)[0m
+[0;32mI (325313) wifi:state: assoc -> run (10)[0m
+[0;32mI (325383) wifi:connected with Honor100, aid = 8, channel 10, BW20, bssid = f6:b9:58:d6:0d:36[0m
+[0;32mI (325383) wifi:security: WPA2-PSK, phy: bgn, rssi: -43[0m
+[0;32mI (325393) wifi:pm start, type: 1[0m
+
+[0;32mI (325393) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (325403) myWIFI: conneted success![0m
+[0;32mI (325433) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (325433) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (326073) https_req: 3...[0m
+[0;32mI (326403) esp_netif_handlers: sta ip: 192.168.43.221, mask: 255.255.255.0, gw: 192.168.43.1[0m
+[0;32mI (326403) myWIFI: WIFI GOT IP[0m
+[0;32mI (327073) https_req: 2...[0m
+[0;32mI (328073) https_req: 1...[0m
+[0;32mI (329073) https_req: 0...[0m
+[0;32mI (330073) https_req: Minimum free heap size: 102820 bytes[0m
+[0;32mI (330073) https_req: Finish https_request[0m
+[0;32mI (367243) wifi:state: run -> init (0)[0m
+[0;32mI (367253) wifi:pm stop, total sleep time: 39891895 us / 41859881 us[0m
+
+[0;32mI (367253) wifi:new:<10,0>, old:<10,0>, ap:<255,255>, sta:<10,0>, prof:1[0m
+[0;32mI (379023) myNTP: tim_write_into_nvs successful[0m
+[0;32mI (379023) myNTP: 6th: The current date/time in BeiJing is: Fri Feb 14 10:25:35 2025[0m
+[0;32mI (422723) wifi:new:<10,0>, old:<10,0>, ap:<255,255>, sta:<10,0>, prof:1[0m
+[0;32mI (422723) wifi:state: init -> auth (b0)[0m
+[0;32mI (422733) wifi:state: auth -> assoc (0)[0m
+[0;32mI (422753) wifi:state: assoc -> run (10)[0m
+[0;32mI (422773) wifi:connected with Honor100, aid = 9, channel 10, BW20, bssid = f6:b9:58:d6:0d:36[0m
+[0;32mI (422773) wifi:security: WPA2-PSK, phy: bgn, rssi: -41[0m
+[0;32mI (422773) wifi:pm start, type: 1[0m
+
+[0;32mI (422773) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (422793) myWIFI: conneted success![0m
+[0;32mI (422813) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (422813) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (423793) esp_netif_handlers: sta ip: 192.168.43.221, mask: 255.255.255.0, gw: 192.168.43.1[0m
+[0;32mI (423793) myWIFI: WIFI GOT IP[0m
+after sync tim_stamp: 1739499995
+[0;32mI (439023) myNTP: tim_write_into_nvs successful[0m
+[0;32mI (439023) myNTP: 7th: The current date/time in BeiJing is: Fri Feb 14 10:26:35 2025[0m
+[0;32mI (439023) myNTP: Updated time in NVS[0m
+[0;32mI (439043) https_req: Start 4th https_request[0m
+[0;32mI (439043) https_req: Updating time from NVS[0m
+time in nvs:1739499995
+[0;32mI (439043) https_req: https_request using crt bundle[0m
+[0;32mI (439073) wifi:<ba-add>idx:0 (ifx:0, f6:b9:58:d6:0d:36), tid:0, ssn:1, winSize:64[0m
+[0;32mI (439313) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (440133) https_req: Connection established...[0m
+[0;32mI (440133) https_req: 193 bytes written[0m
+[0;32mI (440133) https_req: Reading HTTP response...[0m
+HTTP/1.1 200 OK
+Date: Fri, 14 Feb 2025 02:26:37 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 1023
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"3ff-UoIiQtX2XbDXFnwoqT8HatKaaII"
+x-powered-by: Express
+x-ratelimit-limit: 20;w=60
+x-ratelimit-remaining: 19
+x-ratelimit-reset: 60.000
+x-request-id: GCPyB/FnVK7067zzQZYB
+x-tenant-id: 0a2eb6f6-2727-482d-a691-e6d0848af3d9
+
+{"results":[{"location":{"id":"WS0E9D8WN298","name":"广州","country":"CN","path":"广州,广州,广东,中国","timezone":"Asia/Shanghai","timezone_offset":"+08:00"},"daily":[{"date":"2025-02-14","text_day":"多云","code_day":"4","text_night":"多云","code_night":"4","high":"23","low":"14","rainfall":"0.00","precip":"0.00","wind_direction":"无持续风向","wind_direction_degree":"","wind_speed":"8.4","wind_scale":"2","humidity":"80"},{"date":"2025-02-15","text_day":"多云","code_day":"4","text_night":"多云","code_night":"4","high":"24","low":"15","rainfall":"0.00","precip":"0.00","wind_direction":"无持续风向","wind_direction_degree":"","wind_speed":"8.4","wind_scale":"2","humidity":"77"},{"date":"2025-02-16","text_day":"多云","code_day":"4","text_night":"多云","code_night":"4","high":"25","low":"14","rainfall":"0.00","precip":"0.00","wind_direction":"无持续风向","wind_direction_degree":"","wind_speed":"3.0","wind_scale":"1","humidity":"76"}],"last_update":"2025-02-14T08:00:00+08:00"}]}
+广州 2025-02-14 多云 temperature:14~23
+广州 2025-02-15 多云 temperature:15~24
+广州 2025-02-16 多云 temperature:14~25
+[0;32mI (445253) https_req: connection closed[0m
+[0;32mI (445253) https_req: 10...[0m
+[0;32mI (446253) https_req: 9...[0m
+[0;32mI (447253) https_req: 8...[0m
+[0;32mI (448253) https_req: 7...[0m
+[0;32mI (449253) https_req: 6...[0m
+[0;32mI (450253) https_req: 5...[0m
+[0;32mI (451253) https_req: 4...[0m
+[0;32mI (452253) https_req: 3...[0m
+[0;32mI (453253) https_req: 2...[0m
+[0;32mI (454253) https_req: 1...[0m
+[0;32mI (455253) https_req: 0...[0m
+[0;32mI (456253) https_req: Minimum free heap size: 102820 bytes[0m
+[0;32mI (456253) https_req: Finish https_request[0m
+[0;32mI (499023) myNTP: tim_write_into_nvs successful[0m
+[0;32mI (499023) myNTP: 8th: The current date/time in BeiJing is: Fri Feb 14 10:27:35 2025[0m
+[0;32mI (559023) myNTP: tim_write_into_nvs successful[0m
+[0;32mI (559023) myNTP: 9th: The current date/time in BeiJing is: Fri Feb 14 10:28:35 2025[0m
+[0;32mI (559043) https_req: Start 5th https_request[0m
+[0;32mI (559043) https_req: Updating time from NVS[0m
+time in nvs:1739500115
+[0;32mI (559043) https_req: https_request using crt bundle[0m
+[0;32mI (559633) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (560343) https_req: Connection established...[0m
+[0;32mI (560353) https_req: 193 bytes written[0m
+[0;32mI (560353) https_req: Reading HTTP response...[0m
+HTTP/1.1 200 OK
+Date: Fri, 14 Feb 2025 02:28:37 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 1023
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"3ff-UoIiQtX2XbDXFnwoqT8HatKaaII"
+x-powered-by: Express
+x-ratelimit-limit: 20;w=60
+x-ratelimit-remaining: 19
+x-ratelimit-reset: 60.000
+x-request-id: GCPyI+8XTN8L1Z0zm5mD
+x-tenant-id: 0a2eb6f6-2727-482d-a691-e6d0848af3d9
+
+{"results":[{"location":{"id":"WS0E9D8WN298","name":"广州","country":"CN","path":"广州,广州,广东,中国","timezone":"Asia/Shanghai","timezone_offset":"+08:00"},"daily":[{"date":"2025-02-14","text_day":"多云","code_day":"4","text_night":"多云","code_night":"4","high":"23","low":"14","rainfall":"0.00","precip":"0.00","wind_direction":"无持续风向","wind_direction_degree":"","wind_speed":"8.4","wind_scale":"2","humidity":"80"},{"date":"2025-02-15","text_day":"多云","code_day":"4","text_night":"多云","code_night":"4","high":"24","low":"15","rainfall":"0.00","precip":"0.00","wind_direction":"无持续风向","wind_direction_degree":"","wind_speed":"8.4","wind_scale":"2","humidity":"77"},{"date":"2025-02-16","text_day":"多云","code_day":"4","text_night":"多云","code_night":"4","high":"25","low":"14","rainfall":"0.00","precip":"0.00","wind_direction":"无持续风向","wind_direction_degree":"","wind_speed":"3.0","wind_scale":"1","humidity":"76"}],"last_update":"2025-02-14T08:00:00+08:00"}]}
+广州 2025-02-14 多云 temperature:14~23
+广州 2025-02-15 多云 temperature:15~24
+广州 2025-02-16 多云 temperature:14~25
+[0;32mI (565673) https_req: connection closed[0m
+[0;32mI (565673) https_req: 10...[0m
+[0;32mI (566673) https_req: 9...[0m
+[0;32mI (567673) https_req: 8...[0m
+[0;32mI (568673) https_req: 7...[0m
+[0;32mI (569673) https_req: 6...[0m
+[0;32mI (570673) https_req: 5...[0m
+[0;32mI (571673) https_req: 4...[0m
+[0;32mI (572673) https_req: 3...[0m
+[0;32mI (573673) https_req: 2...[0m
+[0;32mI (574673) https_req: 1...[0m
+[0;32mI (575673) https_req: 0...[0m
+[0;32mI (576673) https_req: Minimum free heap size: 102820 bytes[0m
+[0;32mI (576673) https_req: Finish https_request[0m
+after sync tim_stamp: 1739500175
+[0;32mI (619023) myNTP: tim_write_into_nvs successful[0m
+[0;32mI (619023) myNTP: 10th: The current date/time in BeiJing is: Fri Feb 14 10:29:35 2025[0m
+[0;32mI (619023) myNTP: Updated time in NVS[0m
+[0;32mI (679023) myNTP: tim_write_into_nvs successful[0m
+[0;32mI (679023) myNTP: 11th: The current date/time in BeiJing is: Fri Feb 14 10:30:35 2025[0m
+[0;32mI (679043) https_req: Start 6th https_request[0m
+[0;32mI (679043) https_req: Updating time from NVS[0m
+time in nvs:1739500235
+[0;32mI (679043) https_req: https_request using crt bundle[0m
+[0;32mI (679263) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (680173) https_req: Connection established...[0m
+[0;32mI (680183) https_req: 193 bytes written[0m
+[0;32mI (680183) https_req: Reading HTTP response...[0m
+HTTP/1.1 200 OK
+Date: Fri, 14 Feb 2025 02:30:37 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 1023
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"3ff-UoIiQtX2XbDXFnwoqT8HatKaaII"
+x-powered-by: Express
+x-ratelimit-limit: 20;w=60
+x-ratelimit-remaining: 19
+x-ratelimit-reset: 60.000
+x-request-id: GCPyP9dKymc8TSoA5JHD
+x-tenant-id: 0a2eb6f6-2727-482d-a691-e6d0848af3d9
+
+{"results":[{"location":{"id":"WS0E9D8WN298","name":"广州","country":"CN","path":"广州,广州,广东,中国","timezone":"Asia/Shanghai","timezone_offset":"+08:00"},"daily":[{"date":"2025-02-14","text_day":"多云","code_day":"4","text_night":"多云","code_night":"4","high":"23","low":"14","rainfall":"0.00","precip":"0.00","wind_direction":"无持续风向","wind_direction_degree":"","wind_speed":"8.4","wind_scale":"2","humidity":"80"},{"date":"2025-02-15","text_day":"多云","code_day":"4","text_night":"多云","code_night":"4","high":"24","low":"15","rainfall":"0.00","precip":"0.00","wind_direction":"无持续风向","wind_direction_degree":"","wind_speed":"8.4","wind_scale":"2","humidity":"77"},{"date":"2025-02-16","text_day":"多云","code_day":"4","text_night":"多云","code_night":"4","high":"25","low":"14","rainfall":"0.00","precip":"0.00","wind_direction":"无持续风向","wind_direction_degree":"","wind_speed":"3.0","wind_scale":"1","humidity":"76"}],"last_update":"2025-02-14T08:00:00+08:00"}]}
+广州 2025-02-14 多云 temperature:14~23
+广州 2025-02-15 多云 temperature:15~24
+广州 2025-02-16 多云 temperature:14~25
+[0;32mI (685473) https_req: connection closed[0m
+[0;32mI (685483) https_req: 10...[0m
+[0;32mI (686483) https_req: 9...[0m
+[0;32mI (687483) https_req: 8...[0m
+[0;32mI (688483) https_req: 7...[0m
+[0;32mI (689483) https_req: 6...[0m
+[0;32mI (690483) https_req: 5...[0m
+[0;32mI (691483) https_req: 4...[0m
+[0;32mI (692483) https_req: 3...[0m
+[0;32mI (693483) https_req: 2...[0m
+[0;32mI (694483) https_req: 1...[0m
+[0;32mI (695483) https_req: 0...[0m
+[0;32mI (696483) https_req: Minimum free heap size: 102820 bytes[0m
+[0;32mI (696483) https_req: Finish https_request[0m

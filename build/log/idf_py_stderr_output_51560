@@ -1,0 +1,24 @@
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM4 instead...[0m
+[0;33m--- esp-idf-monitor 1.5.0 on \\.\COM4 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400dfa71: parse_weather_data at D:/MyCode/esp32/esp32e_code/zproj_SmartWatch/components/bsp/weather.c:27
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+0x4000c477: memset in ROM
+[0m
+[0;33m--- 0x400dfa6e: parse_weather_data at D:/MyCode/esp32/esp32e_code/zproj_SmartWatch/components/bsp/weather.c:26
+0x400d81e3: https_get_request at D:/MyCode/esp32/esp32e_code/zproj_SmartWatch/components/com/https_reqst.c:117
+0x400d826f: https_get_request_using_crt_bundle at D:/MyCode/esp32/esp32e_code/zproj_SmartWatch/components/com/https_reqst.c:138
+0x400d82dd: send_https_request_task at D:/MyCode/esp32/esp32e_code/zproj_SmartWatch/components/com/https_reqst.c:158
+0x4008c52d: vPortTaskWrapper at D:/Environment_file/esp32/v5.2.3/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0m

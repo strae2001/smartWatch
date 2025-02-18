@@ -1,0 +1,1696 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.3-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Feb 13 2025 13:01:37[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00200000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=74014h (475156) map[0m
+[0;32mI (268) esp_image: segment 1: paddr=0008403c vaddr=3ffb0000 size=043cch ( 17356) load[0m
+[0;32mI (274) esp_image: segment 2: paddr=00088410 vaddr=40080000 size=07c08h ( 31752) load[0m
+[0;32mI (287) esp_image: segment 3: paddr=00090020 vaddr=400d0020 size=e315ch (930140) map[0m
+[0;32mI (606) esp_image: segment 4: paddr=00173184 vaddr=40087c08 size=12958h ( 76120) load[0m
+[0;32mI (636) esp_image: segment 5: paddr=00185ae4 vaddr=50000000 size=00004h (     4) load[0m
+[0;32mI (649) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (649) boot: Disabling RNG early entropy source...[0m
+[0;32mI (661) cpu_start: Multicore app[0m
+[0;32mI (670) cpu_start: Pro cpu start user code[0m
+[0;32mI (670) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (670) cpu_start: Application information:[0m
+[0;32mI (673) cpu_start: Project name:     zproj_SmartWatch[0m
+[0;32mI (679) cpu_start: App version:      1[0m
+[0;32mI (683) cpu_start: Compile time:     Feb 13 2025 13:04:33[0m
+[0;32mI (689) cpu_start: ELF file SHA256:  e25f44d06...[0m
+[0;32mI (695) cpu_start: ESP-IDF:          v5.2.3-dirty[0m
+[0;32mI (700) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (705) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (710) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (715) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (722) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (728) heap_init: At 3FFB9610 len 000269F0 (154 KiB): DRAM[0m
+[0;32mI (734) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (740) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (747) heap_init: At 4009A560 len 00005AA0 (22 KiB): IRAM[0m
+[0;32mI (754) spi_flash: detected chip: generic[0m
+[0;32mI (758) spi_flash: flash io: dio[0m
+[0;33mW (762) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (773) main_task: Started on CPU0[0m
+[0;32mI (783) main_task: Calling app_main()[0m
+[0;32mI (813) wifi:wifi driver task: 3ffc1660, prio:23, stack:6656, core=0[0m
+[0;32mI (823) wifi:wifi firmware version: 82f54d2[0m
+[0;32mI (823) wifi:wifi certification version: v7.0[0m
+[0;32mI (823) wifi:config NVS flash: enabled[0m
+[0;32mI (823) wifi:config nano formating: disabled[0m
+[0;32mI (833) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (833) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (833) wifi:Init management short buffer num: 32[0m
+[0;32mI (843) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (843) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (853) wifi:Init static rx buffer num: 10[0m
+[0;32mI (853) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (863) wifi_init: rx ba win: 6[0m
+[0;32mI (863) wifi_init: tcpip mbox: 32[0m
+[0;32mI (863) wifi_init: udp mbox: 6[0m
+[0;32mI (873) wifi_init: tcp mbox: 6[0m
+[0;32mI (873) wifi_init: tcp tx win: 5760[0m
+[0;32mI (873) wifi_init: tcp rx win: 5760[0m
+[0;32mI (883) wifi_init: tcp mss: 1440[0m
+[0;32mI (883) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (893) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (893) wifi:Password length is zero, but authmode threshold is 3, making it impossible to connect to an AP with authmode OPEN[0m
+[0;32mI (943) sdcard: Using SPI peripheral[0m
+[0;32mI (943) sdcard: Mounting filesystem[0m
+[0;32mI (953) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (1153) sdmmc_sd: sdmmc_init_sd_if_cond: send_if_cond (1) returned 0x108[0m
+[0;31mE (1153) vfs_fat_sdmmc: sdmmc_card_init failed (0x108).[0m
+[0;32mI (1153) gpio: GPIO[13]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1163) sdcard: SDcard mount failed![0m
+[0;32mI (1163) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1173) gpio: GPIO[21]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1183) st7789: create esp_lcd_new_panel[0m
+[0;32mI (1193) gpio: GPIO[17]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (2033) cst816t: 	Chip ID: 0xb5[0m
+[0;32mI (2033) cst816t: 	Firmware version: 0x01[0m
+[0;32mI (2033) cst816t: 	Factory ID: 0x04[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.3-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Feb 13 2025 13:01:37[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00200000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=74014h (475156) map[0m
+[0;32mI (268) esp_image: segment 1: paddr=0008403c vaddr=3ffb0000 size=043cch ( 17356) load[0m
+[0;32mI (274) esp_image: segment 2: paddr=00088410 vaddr=40080000 size=07c08h ( 31752) load[0m
+[0;32mI (287) esp_image: segment 3: paddr=00090020 vaddr=400d0020 size=e315ch (930140) map[0m
+[0;32mI (606) esp_image: segment 4: paddr=00173184 vaddr=40087c08 size=12958h ( 76120) load[0m
+[0;32mI (636) esp_image: segment 5: paddr=00185ae4 vaddr=50000000 size=00004h (     4) load[0m
+[0;32mI (649) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (649) boot: Disabling RNG early entropy source...[0m
+[0;32mI (661) cpu_start: Multicore app[0m
+[0;32mI (670) cpu_start: Pro cpu start user code[0m
+[0;32mI (670) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (670) cpu_start: Application information:[0m
+[0;32mI (673) cpu_start: Project name:     zproj_SmartWatch[0m
+[0;32mI (679) cpu_start: App version:      1[0m
+[0;32mI (683) cpu_start: Compile time:     Feb 13 2025 13:04:33[0m
+[0;32mI (689) cpu_start: ELF file SHA256:  e25f44d06...[0m
+[0;32mI (695) cpu_start: ESP-IDF:          v5.2.3-dirty[0m
+[0;32mI (700) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (705) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (710) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (715) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (722) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (728) heap_init: At 3FFB9610 len 000269F0 (154 KiB): DRAM[0m
+[0;32mI (734) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (740) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (747) heap_init: At 4009A560 len 00005AA0 (22 KiB): IRAM[0m
+[0;32mI (754) spi_flash: detected chip: generic[0m
+[0;32mI (758) spi_flash: flash io: dio[0m
+[0;33mW (762) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (773) main_task: Started on CPU0[0m
+[0;32mI (783) main_task: Calling app_main()[0m
+[0;32mI (813) wifi:wifi driver task: 3ffc1660, prio:23, stack:6656, core=0[0m
+[0;32mI (823) wifi:wifi firmware version: 82f54d2[0m
+[0;32mI (823) wifi:wifi certification version: v7.0[0m
+[0;32mI (823) wifi:config NVS flash: enabled[0m
+[0;32mI (823) wifi:config nano formating: disabled[0m
+[0;32mI (833) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (833) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (833) wifi:Init management short buffer num: 32[0m
+[0;32mI (843) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (843) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (853) wifi:Init static rx buffer num: 10[0m
+[0;32mI (853) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (863) wifi_init: rx ba win: 6[0m
+[0;32mI (863) wifi_init: tcpip mbox: 32[0m
+[0;32mI (863) wifi_init: udp mbox: 6[0m
+[0;32mI (873) wifi_init: tcp mbox: 6[0m
+[0;32mI (873) wifi_init: tcp tx win: 5760[0m
+[0;32mI (873) wifi_init: tcp rx win: 5760[0m
+[0;32mI (883) wifi_init: tcp mss: 1440[0m
+[0;32mI (883) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (893) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (893) wifi:Password length is zero, but authmode threshold is 3, making it impossible to connect to an AP with authmode OPEN[0m
+[0;32mI (903) sdcard: Using SPI peripheral[0m
+[0;32mI (913) sdcard: Mounting filesystem[0m
+[0;32mI (913) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (1123) sdmmc_sd: sdmmc_init_sd_if_cond: send_if_cond (1) returned 0x108[0m
+[0;31mE (1123) vfs_fat_sdmmc: sdmmc_card_init failed (0x108).[0m
+[0;32mI (1123) gpio: GPIO[13]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1133) sdcard: SDcard mount failed![0m
+[0;32mI (1133) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1143) gpio: GPIO[21]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1153) st7789: create esp_lcd_new_panel[0m
+[0;32mI (1163) gpio: GPIO[17]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (2003) cst816t: 	Chip ID: 0xb5[0m
+[0;32mI (2003) cst816t: 	Firmware version: 0x01[0m
+[0;32mI (2003) cst816t: 	Factory ID: 0x04[0m
+[0;32mI (19263) phy_init: phy_version 4840,a40f0ac,Aug 16 2024,16:48:06[0m
+[0;32mI (19343) wifi:mode : sta (ec:64:c9:90:7a:94)[0m
+[0;32mI (19343) wifi:enable tsf[0m
+[0;32mI (19403) smartconfig: SC version: V3.0.1[0m
+[0;32mI (19403) myWIFI: smartconfig  has started![0m
+[0;32mI (24243) wifi:ic_enable_sniffer[0m
+[0;32mI (24243) smartconfig: Start to find channel...[0m
+[0;32mI (24243) myWIFI: Scan done[0m
+[0;32mI (26243) smartconfig: TYPE: ESPTOUCH[0m
+[0;32mI (26243) smartconfig: T|AP MAC: f6:b9:58:d6:0d:36[0m
+[0;32mI (26243) smartconfig: Found channel on 4-0. Start to get ssid and password...[0m
+[0;32mI (26243) myWIFI: Found channel[0m
+[0;32mI (26283) smartconfig: TYPE: ESPTOUCH[0m
+[0;32mI (26283) smartconfig: Found channel on 4-0. Start to get ssid and password...[0m
+[0;32mI (26283) myWIFI: Found channel[0m
+[0;32mI (29043) smartconfig: T|pswd: Cc.246850@[0m
+[0;32mI (29043) smartconfig: T|ssid: Honor100[0m
+[0;32mI (29043) smartconfig: T|bssid: f6:b9:58:d6:0d:36[0m
+[0;32mI (29043) wifi:ic_disable_sniffer[0m
+[0;32mI (29043) myWIFI: Got SSID and password[0m
+[0;33mW (29053) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (29373) wifi:new:<4,0>, old:<4,0>, ap:<255,255>, sta:<4,0>, prof:1[0m
+[0;32mI (29383) wifi:state: init -> auth (b0)[0m
+[0;32mI (29383) wifi:state: auth -> assoc (0)[0m
+[0;32mI (29393) wifi:state: assoc -> run (10)[0m
+[0;32mI (29413) wifi:connected with Honor100, aid = 2, channel 4, BW20, bssid = f6:b9:58:d6:0d:36[0m
+[0;32mI (29423) wifi:security: WPA2-PSK, phy: bgn, rssi: -36[0m
+[0;32mI (29433) wifi:pm start, type: 1[0m
+
+[0;32mI (29433) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (29433) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (29443) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (29453) myWIFI: conneted success![0m
+[0;32mI (30453) esp_netif_handlers: sta ip: 192.168.43.221, mask: 255.255.255.0, gw: 192.168.43.1[0m
+[0;32mI (30453) myWIFI: WIFI GOT IP[0m
+[0;32mI (30453) myWIFI: WiFi Connected to ap[0m
+[0;32mI (30823) wifi:<ba-add>idx:0 (ifx:0, f6:b9:58:d6:0d:36), tid:0, ssn:1, winSize:64[0m
+[0;32mI (31013) myNTP: mySntp start[0m
+[0;32mI (31013) myNTP: Boot count: 1[0m
+[0;32mI (31013) myNTP: Time is not set yet. Connecting to WiFi and getting time over NTP.[0m
+[0;32mI (31013) myNTP: Initializing SNTP[0m
+[0;32mI (31013) myNTP: Starting SNTP[0m
+[0;32mI (31023) myNTP: List of configured NTP servers:[0m
+[0;32mI (31023) myNTP: server 0: cn.pool.ntp.org[0m
+[0;32mI (31033) myNTP: server 1: time.windows.com[0m
+[0;32mI (31033) myNTP: server 2: ntp.sjtu.edu.cn[0m
+[0;32mI (31043) https_req: Start 1th https_request[0m
+[0;32mI (31043) https_req: Updating time from NVS[0m
+time in nvs:1739448174
+[0;32mI (31053) https_req: https_request using crt bundle[0m
+[0;32mI (31363) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (31873) https_req: Connection established...[0m
+[0;32mI (31883) https_req: 193 bytes written[0m
+[0;32mI (31883) https_req: Reading HTTP response...[0m
+HTTP/1.1 200 OK
+Date: Thu, 13 Feb 2025 12:05:31 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 1001
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"3e9-IrzSCl6tv7gTZ5TW8ngCPZNUg/o"
+x-powered-by: Express
+x-ratelimit-limit: 20;w=60
+x-ratelimit-remaining: 19
+x-ratelimit-reset: 60.000
+x-request-id: GCPDCppEykAS2b8ADovB
+x-tenant-id: 0a2eb6f6-2727-482d-a691-e6d0848af3d9
+
+{"results":[{"location":{"id":"WS10730EM8EV","name":"深圳","country":"CN","path":"深圳,深圳,广东,中国","timezone":"Asia/Shanghai","timezone_offset":"+08:00"},"daily":[{"date":"2025-02-13","text_day":"阴","code_day":"9","text_night":"阴","code_night":"9","high":"22","low":"14","rainfall":"0.00","precip":"0.00","wind_direction":"北","wind_direction_degree":"0","wind_speed":"23.4","wind_scale":"4","humidity":"71"},{"date":"2025-02-14","text_day":"多云","code_day":"4","text_night":"阴","code_night":"9","high":"21","low":"15","rainfall":"0.00","precip":"0.00","wind_direction":"无持续风向","wind_direction_degree":"","wind_speed":"8.4","wind_scale":"2","humidity":"79"},{"date":"2025-02-15","text_day":"阴","code_day":"9","text_night":"多云","code_night":"4","high":"22","low":"16","rainfall":"0.00","precip":"0.00","wind_direction":"无持续风向","wind_direction_degree":"","wind_speed":"3.0","wind_scale":"1","humidity":"86"}],"last_update":"2025-02-13T08:00:00+08:00"}]}
+Guru Meditation Error: Core  1 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400dfa71  PS      : 0x00060c30  A0      : 0x800d81e6  A1      : 0x3ffdf240  
+A2      : 0x3ffdf2c0  A3      : 0x3ffdf2c0  A4      : 0x000003ff  A5      : 0x3ffdf6c0  
+A6      : 0x3f403448  A7      : 0x00000000  A8      : 0x800dfa71  A9      : 0x3ffdf220  
+A10     : 0x00000000  A11     : 0x3f4057c0  A12     : 0x00000037  A13     : 0x3ffdf276  
+A14     : 0x00000002  A15     : 0x00000003  SAR     : 0x00000011  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000010  LBEG    : 0x4000c46c  LEND    : 0x4000c477  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x400dfa6e:0x3ffdf240 0x400d81e3:0x3ffdf2b0 0x400d826f:0x3ffdf6f0 0x400d82dd:0x3ffdf7e0 0x4008c52d:0x3ffdf800
+
+
+
+
+ELF file SHA256: e25f44d06
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.3-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Feb 13 2025 13:01:37[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00200000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=74014h (475156) map[0m
+[0;32mI (267) esp_image: segment 1: paddr=0008403c vaddr=3ffb0000 size=043cch ( 17356) load[0m
+[0;32mI (274) esp_image: segment 2: paddr=00088410 vaddr=40080000 size=07c08h ( 31752) load[0m
+[0;32mI (287) esp_image: segment 3: paddr=00090020 vaddr=400d0020 size=e315ch (930140) map[0m
+[0;32mI (606) esp_image: segment 4: paddr=00173184 vaddr=40087c08 size=12958h ( 76120) load[0m
+[0;32mI (636) esp_image: segment 5: paddr=00185ae4 vaddr=50000000 size=00004h (     4) load[0m
+[0;32mI (649) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (649) boot: Disabling RNG early entropy source...[0m
+[0;32mI (661) cpu_start: Multicore app[0m
+[0;32mI (670) cpu_start: Pro cpu start user code[0m
+[0;32mI (670) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (670) cpu_start: Application information:[0m
+[0;32mI (673) cpu_start: Project name:     zproj_SmartWatch[0m
+[0;32mI (679) cpu_start: App version:      1[0m
+[0;32mI (683) cpu_start: Compile time:     Feb 13 2025 13:04:33[0m
+[0;32mI (689) cpu_start: ELF file SHA256:  e25f44d06...[0m
+[0;32mI (695) cpu_start: ESP-IDF:          v5.2.3-dirty[0m
+[0;32mI (700) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (705) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (709) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (715) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (722) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (728) heap_init: At 3FFB9610 len 000269F0 (154 KiB): DRAM[0m
+[0;32mI (734) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (740) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (747) heap_init: At 4009A560 len 00005AA0 (22 KiB): IRAM[0m
+[0;32mI (754) spi_flash: detected chip: generic[0m
+[0;32mI (757) spi_flash: flash io: dio[0m
+[0;33mW (762) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (773) main_task: Started on CPU0[0m
+[0;32mI (783) main_task: Calling app_main()[0m
+[0;32mI (813) wifi:wifi driver task: 3ffc1660, prio:23, stack:6656, core=0[0m
+[0;32mI (823) wifi:wifi firmware version: 82f54d2[0m
+[0;32mI (823) wifi:wifi certification version: v7.0[0m
+[0;32mI (823) wifi:config NVS flash: enabled[0m
+[0;32mI (823) wifi:config nano formating: disabled[0m
+[0;32mI (833) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (833) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (833) wifi:Init management short buffer num: 32[0m
+[0;32mI (843) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (843) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (853) wifi:Init static rx buffer num: 10[0m
+[0;32mI (853) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (863) wifi_init: rx ba win: 6[0m
+[0;32mI (863) wifi_init: tcpip mbox: 32[0m
+[0;32mI (863) wifi_init: udp mbox: 6[0m
+[0;32mI (873) wifi_init: tcp mbox: 6[0m
+[0;32mI (873) wifi_init: tcp tx win: 5760[0m
+[0;32mI (873) wifi_init: tcp rx win: 5760[0m
+[0;32mI (883) wifi_init: tcp mss: 1440[0m
+[0;32mI (883) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (893) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (893) wifi:Password length is zero, but authmode threshold is 3, making it impossible to connect to an AP with authmode OPEN[0m
+[0;32mI (993) sdcard: Using SPI peripheral[0m
+[0;32mI (993) sdcard: Mounting filesystem[0m
+[0;32mI (1003) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (1203) sdmmc_sd: sdmmc_init_sd_if_cond: send_if_cond (1) returned 0x108[0m
+[0;31mE (1203) vfs_fat_sdmmc: sdmmc_card_init failed (0x108).[0m
+[0;32mI (1203) gpio: GPIO[13]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1213) sdcard: SDcard mount failed![0m
+[0;32mI (1213) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1223) gpio: GPIO[21]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1233) st7789: create esp_lcd_new_panel[0m
+[0;32mI (1243) gpio: GPIO[17]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (2083) cst816t: 	Chip ID: 0xb5[0m
+[0;32mI (2083) cst816t: 	Firmware version: 0x01[0m
+[0;32mI (2083) cst816t: 	Factory ID: 0x04[0m
+[0;32mI (46883) phy_init: phy_version 4840,a40f0ac,Aug 16 2024,16:48:06[0m
+[0;32mI (46963) wifi:mode : sta (ec:64:c9:90:7a:94)[0m
+[0;32mI (46963) wifi:enable tsf[0m
+[0;32mI (47023) smartconfig: SC version: V3.0.1[0m
+[0;32mI (47023) myWIFI: smartconfig  has started![0m
+[0;32mI (51863) wifi:ic_enable_sniffer[0m
+[0;32mI (51863) smartconfig: Start to find channel...[0m
+[0;32mI (51863) myWIFI: Scan done[0m
+[0;32mI (51903) smartconfig: TYPE: ESPTOUCH[0m
+[0;32mI (51903) smartconfig: T|AP MAC: f6:b9:58:d6:0d:36[0m
+[0;32mI (51903) smartconfig: Found channel on 4-0. Start to get ssid and password...[0m
+[0;32mI (51913) myWIFI: Found channel[0m
+[0;32mI (52033) smartconfig: TYPE: ESPTOUCH[0m
+[0;32mI (52033) smartconfig: Found channel on 4-0. Start to get ssid and password...[0m
+[0;32mI (52033) myWIFI: Found channel[0m
+[0;32mI (54613) smartconfig: T|pswd: Cc.246850@[0m
+[0;32mI (54613) smartconfig: T|ssid: Honor100[0m
+[0;32mI (54613) smartconfig: T|bssid: f6:b9:58:d6:0d:36[0m
+[0;32mI (54613) wifi:ic_disable_sniffer[0m
+[0;32mI (54613) myWIFI: Got SSID and password[0m
+[0;33mW (54623) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (54953) wifi:new:<4,0>, old:<4,0>, ap:<255,255>, sta:<4,0>, prof:1[0m
+[0;32mI (54963) wifi:state: init -> auth (b0)[0m
+[0;32mI (54973) wifi:state: auth -> assoc (0)[0m
+[0;32mI (54983) wifi:state: assoc -> init (2a0)[0m
+[0;32mI (54993) wifi:new:<4,0>, old:<4,0>, ap:<255,255>, sta:<4,0>, prof:1[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.3-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Feb 13 2025 13:01:37[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00200000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=74014h (475156) map[0m
+[0;32mI (268) esp_image: segment 1: paddr=0008403c vaddr=3ffb0000 size=043cch ( 17356) load[0m
+[0;32mI (274) esp_image: segment 2: paddr=00088410 vaddr=40080000 size=07c08h ( 31752) load[0m
+[0;32mI (287) esp_image: segment 3: paddr=00090020 vaddr=400d0020 size=e315ch (930140) map[0m
+[0;32mI (606) esp_image: segment 4: paddr=00173184 vaddr=40087c08 size=12958h ( 76120) load[0m
+[0;32mI (636) esp_image: segment 5: paddr=00185ae4 vaddr=50000000 size=00004h (     4) load[0m
+[0;32mI (649) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (649) boot: Disabling RNG early entropy source...[0m
+[0;32mI (661) cpu_start: Multicore app[0m
+[0;32mI (670) cpu_start: Pro cpu start user code[0m
+[0;32mI (670) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (670) cpu_start: Application information:[0m
+[0;32mI (673) cpu_start: Project name:     zproj_SmartWatch[0m
+[0;32mI (679) cpu_start: App version:      1[0m
+[0;32mI (683) cpu_start: Compile time:     Feb 13 2025 13:04:33[0m
+[0;32mI (689) cpu_start: ELF file SHA256:  e25f44d06...[0m
+[0;32mI (695) cpu_start: ESP-IDF:          v5.2.3-dirty[0m
+[0;32mI (700) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (705) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (710) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (715) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (722) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (728) heap_init: At 3FFB9610 len 000269F0 (154 KiB): DRAM[0m
+[0;32mI (734) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (740) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (747) heap_init: At 4009A560 len 00005AA0 (22 KiB): IRAM[0m
+[0;32mI (754) spi_flash: detected chip: generic[0m
+[0;32mI (758) spi_flash: flash io: dio[0m
+[0;33mW (762) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (773) main_task: Started on CPU0[0m
+[0;32mI (783) main_task: Calling app_main()[0m
+[0;32mI (813) wifi:wifi driver task: 3ffc1660, prio:23, stack:6656, core=0[0m
+[0;32mI (823) wifi:wifi firmware version: 82f54d2[0m
+[0;32mI (823) wifi:wifi certification version: v7.0[0m
+[0;32mI (823) wifi:config NVS flash: enabled[0m
+[0;32mI (823) wifi:config nano formating: disabled[0m
+[0;32mI (833) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (833) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (833) wifi:Init management short buffer num: 32[0m
+[0;32mI (843) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (843) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (853) wifi:Init static rx buffer num: 10[0m
+[0;32mI (853) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (863) wifi_init: rx ba win: 6[0m
+[0;32mI (863) wifi_init: tcpip mbox: 32[0m
+[0;32mI (863) wifi_init: udp mbox: 6[0m
+[0;32mI (873) wifi_init: tcp mbox: 6[0m
+[0;32mI (873) wifi_init: tcp tx win: 5760[0m
+[0;32mI (873) wifi_init: tcp rx win: 5760[0m
+[0;32mI (883) wifi_init: tcp mss: 1440[0m
+[0;32mI (883) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (893) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (893) wifi:Password length is zero, but authmode threshold is 3, making it impossible to connect to an AP with authmode OPEN[0m
+[0;32mI (943) sdcard: Using SPI peripheral[0m
+[0;32mI (943) sdcard: Mounting filesystem[0m
+[0;32mI (953) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (1153) sdmmc_sd: sdmmc_init_sd_if_cond: send_if_cond (1) returned 0x108[0m
+[0;31mE (1153) vfs_fat_sdmmc: sdmmc_card_init failed (0x108).[0m
+[0;32mI (1153) gpio: GPIO[13]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1163) sdcard: SDcard mount failed![0m
+[0;32mI (1163) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1173) gpio: GPIO[21]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1183) st7789: create esp_lcd_new_panel[0m
+[0;32mI (1193) gpio: GPIO[17]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (2033) cst816t: 	Chip ID: 0x40[0m
+[0;32mI (2033) cst816t: 	Firmware version: 0x40[0m
+[0;32mI (2033) cst816t: 	Factory ID: 0x40[0m
+[0;32mI (6833) phy_init: phy_version 4840,a40f0ac,Aug 16 2024,16:48:06[0m
+[0;32mI (6913) wifi:mode : sta (ec:64:c9:90:7a:94)[0m
+[0;32mI (6913) wifi:enable tsf[0m
+[0;32mI (6973) smartconfig: SC version: V3.0.1[0m
+[0;32mI (6973) myWIFI: smartconfig  has started![0m
+[0;32mI (11813) wifi:ic_enable_sniffer[0m
+[0;32mI (11813) smartconfig: Start to find channel...[0m
+[0;32mI (11813) myWIFI: Scan done[0m
+[0;32mI (11983) smartconfig: TYPE: ESPTOUCH[0m
+[0;32mI (11983) smartconfig: T|AP MAC: f6:b9:58:d6:0d:36[0m
+[0;32mI (11983) smartconfig: Found channel on 4-0. Start to get ssid and password...[0m
+[0;32mI (11983) myWIFI: Found channel[0m
+[0;32mI (12043) smartconfig: TYPE: ESPTOUCH[0m
+[0;32mI (12043) smartconfig: Found channel on 4-0. Start to get ssid and password...[0m
+[0;32mI (12043) myWIFI: Found channel[0m
+[0;32mI (14433) smartconfig: T|pswd: Cc.246850@[0m
+[0;32mI (14433) smartconfig: T|ssid: Honor100[0m
+[0;32mI (14433) smartconfig: T|bssid: f6:b9:58:d6:0d:36[0m
+[0;32mI (14433) wifi:ic_disable_sniffer[0m
+[0;32mI (14433) myWIFI: Got SSID and password[0m
+[0;33mW (14443) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (14803) wifi:new:<4,0>, old:<4,0>, ap:<255,255>, sta:<4,0>, prof:1[0m
+[0;32mI (14813) wifi:state: init -> auth (b0)[0m
+[0;32mI (14813) wifi:state: auth -> assoc (0)[0m
+[0;32mI (14833) wifi:state: assoc -> run (10)[0m
+[0;32mI (14853) wifi:connected with Honor100, aid = 1, channel 4, BW20, bssid = f6:b9:58:d6:0d:36[0m
+[0;32mI (14863) wifi:security: WPA2-PSK, phy: bgn, rssi: -29[0m
+[0;32mI (14873) wifi:pm start, type: 1[0m
+
+[0;32mI (14873) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (14873) myWIFI: conneted success![0m
+[0;32mI (14933) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (14933) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (15873) esp_netif_handlers: sta ip: 192.168.43.221, mask: 255.255.255.0, gw: 192.168.43.1[0m
+[0;32mI (15873) myWIFI: WIFI GOT IP[0m
+[0;32mI (15873) myWIFI: WiFi Connected to ap[0m
+[0;32mI (16043) myNTP: mySntp start[0m
+[0;32mI (16043) myNTP: Boot count: 1[0m
+[0;32mI (16043) myNTP: Time is not set yet. Connecting to WiFi and getting time over NTP.[0m
+[0;32mI (16043) myNTP: Initializing SNTP[0m
+[0;32mI (16053) myNTP: Starting SNTP[0m
+[0;32mI (16053) wifi:<ba-add>idx:0 (ifx:0, f6:b9:58:d6:0d:36), tid:0, ssn:1, winSize:64[0;32mI (16053) myNTP: List of configured NTP servers:[0m[0m
+
+[0;32mI (16063) myNTP: server 0: cn.pool.ntp.org[0m
+[0;32mI (16073) myNTP: server 1: time.windows.com[0m
+[0;32mI (16073) myNTP: server 2: ntp.sjtu.edu.cn[0m
+[0;32mI (16083) https_req: Start 1th https_request[0m
+[0;32mI (16083) https_req: Updating time from NVS[0m
+time in nvs:1739448174
+[0;32mI (16093) https_req: https_request using crt bundle[0m
+[0;32mI (16473) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (17043) https_req: Connection established...[0m
+[0;32mI (17043) https_req: 193 bytes written[0m
+[0;32mI (17043) https_req: Reading HTTP response...[0m
+HTTP/1.1 200 OK
+Date: Thu, 13 Feb 2025 12:07:52 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 1001
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"3e9-IrzSCl6tv7gTZ5TW8ngCPZNUg/o"
+x-powered-by: Express
+x-ratelimit-limit: 20;w=60
+x-ratelimit-remaining: 19
+x-ratelimit-reset: 60.000
+x-request-id: GCPDK4DpVg86bBFzP1YB
+x-tenant-id: 0a2eb6f6-2727-482d-a691-e6d0848af3d9
+
+{"results":[{"location":{"id":"WS10730EM8EV","name":"深圳","country":"CN","path":"深圳,深圳,广东,中国","timezone":"Asia/Shanghai","timezone_offset":"+08:00"},"daily":[{"date":"2025-02-13","text_day":"阴","code_day":"9","text_night":"阴","code_night":"9","high":"22","low":"14","rainfall":"0.00","precip":"0.00","wind_direction":"北","wind_direction_degree":"0","wind_speed":"23.4","wind_scale":"4","humidity":"71"},{"date":"2025-02-14","text_day":"多云","code_day":"4","text_night":"阴","code_night":"9","high":"21","low":"15","rainfall":"0.00","precip":"0.00","wind_direction":"无持续风向","wind_direction_degree":"","wind_speed":"8.4","wind_scale":"2","humidity":"79"},{"date":"2025-02-15","text_day":"阴","code_day":"9","text_night":"多云","code_night":"4","high":"22","low":"16","rainfall":"0.00","precip":"0.00","wind_direction":"无持续风向","wind_direction_degree":"","wind_speed":"3.0","wind_scale":"1","humidity":"86"}],"last_update":"2025-02-13T08:00:00+08:00"}]}
+深圳 2025-02-13 阴 temperature:14~22
+深圳 2025-02-14 多云 temperature:15~21
+深圳 2025-02-15 阴 temperature:16~22
+[0;32mI (18083) myNTP: Waiting for system time to be set... (1/15)[0m
+[0;32mI (18933) myWIFI: smartconfig over[0m
+[0;32mI (20073) myNTP: Notification of a time synchronization event[0m
+after sync tim_stamp: 1739448475
+[0;32mI (20083) myNTP: tim_write_into_nvs successful[0m
+[0;32mI (20083) myNTP: 1th: The current date/time in BeiJing is: Thu Feb 13 20:07:55 2025[0m
+[0;32mI (20083) main: mySntp_done, Beijing time was successfully obtained[0m
+[0;32mI (22213) https_req: connection closed[0m
+[0;32mI (22213) https_req: 10...[0m
+[0;32mI (23213) https_req: 9...[0m
+[0;32mI (24213) https_req: 8...[0m
+[0;32mI (25213) https_req: 7...[0m
+[0;32mI (26213) https_req: 6...[0m
+[0;32mI (27213) https_req: 5...[0m
+[0;32mI (28213) https_req: 4...[0m
+[0;32mI (29213) https_req: 3...[0m
+[0;32mI (30213) https_req: 2...[0m
+[0;32mI (31213) https_req: 1...[0m
+[0;32mI (32213) https_req: 0...[0m
+[0;32mI (33213) https_req: Minimum free heap size: 102572 bytes[0m
+[0;32mI (33213) https_req: Finish https_request[0m
+[0;32mI (49373) wifi:state: run -> init (0)[0m
+[0;32mI (49383) wifi:pm stop, total sleep time: 29836846 us / 34507901 us[0m
+
+[0;32mI (49383) wifi:<ba-del>idx:0, tid:0[0m
+[0;32mI (49383) wifi:new:<4,0>, old:<4,0>, ap:<255,255>, sta:<4,0>, prof:1[0m
+[0;32mI (75183) wifi:new:<4,0>, old:<4,0>, ap:<255,255>, sta:<4,0>, prof:1[0m
+[0;32mI (75183) wifi:state: init -> auth (b0)[0m
+[0;32mI (75193) wifi:state: auth -> assoc (0)[0m
+[0;32mI (75203) wifi:state: assoc -> run (10)[0m
+[0;32mI (75233) wifi:connected with Honor100, aid = 3, channel 4, BW20, bssid = f6:b9:58:d6:0d:36[0m
+[0;32mI (75233) wifi:security: WPA2-PSK, phy: bgn, rssi: -37[0m
+[0;32mI (75243) wifi:pm start, type: 1[0m
+
+[0;32mI (75243) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (75253) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (75253) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (75263) myWIFI: conneted success![0m
+[0;32mI (76053) myNTP: tim_write_into_nvs successful[0m
+[0;32mI (76053) myNTP: 2th: The current date/time in BeiJing is: Thu Feb 13 20:08:51 2025[0m
+[0;32mI (76263) esp_netif_handlers: sta ip: 192.168.43.221, mask: 255.255.255.0, gw: 192.168.43.1[0m
+[0;32mI (76263) myWIFI: WIFI GOT IP[0m
+[0;32mI (136053) myNTP: tim_write_into_nvs successful[0m
+[0;32mI (136053) myNTP: 3th: The current date/time in BeiJing is: Thu Feb 13 20:09:51 2025[0m
+[0;32mI (136083) https_req: Start 2th https_request[0m
+[0;32mI (136083) https_req: Updating time from NVS[0m
+time in nvs:1739448591
+[0;32mI (136083) https_req: https_request using crt bundle[0m
+[0;32mI (137643) wifi:<ba-add>idx:0 (ifx:0, f6:b9:58:d6:0d:36), tid:0, ssn:1, winSize:64[0m
+[0;32mI (138033) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (139153) https_req: Connection established...[0m
+[0;32mI (139153) https_req: 193 bytes written[0m
+[0;32mI (139153) https_req: Reading HTTP response...[0m
+HTTP/1.1 200 OK
+Date: Thu, 13 Feb 2025 12:09:54 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 1001
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"3e9-IrzSCl6tv7gTZ5TW8ngCPZNUg/o"
+x-powered-by: Express
+x-ratelimit-limit: 20;w=60
+x-ratelimit-remaining: 19
+x-ratelimit-reset: 60.000
+x-request-id: GCPDR+y6ATP6T6iipikE
+x-tenant-id: 0a2eb6f6-2727-482d-a691-e6d0848af3d9
+
+{"results":[{"location":{"id":"WS10730EM8EV","name":"深圳","country":"CN","path":"深圳,深圳,广东,中国","timezone":"Asia/Shanghai","timezone_offset":"+08:00"},"daily":[{"date":"2025-02-13","text_day":"阴","code_day":"9","text_night":"阴","code_night":"9","high":"22","low":"14","rainfall":"0.00","precip":"0.00","wind_direction":"北","wind_direction_degree":"0","wind_speed":"23.4","wind_scale":"4","humidity":"71"},{"date":"2025-02-14","text_day":"多云","code_day":"4","text_night":"阴","code_night":"9","high":"21","low":"15","rainfall":"0.00","precip":"0.00","wind_direction":"无持续风向","wind_direction_degree":"","wind_speed":"8.4","wind_scale":"2","humidity":"79"},{"date":"2025-02-15","text_day":"阴","code_day":"9","text_night":"多云","code_night":"4","high":"22","low":"16","rainfall":"0.00","precip":"0.00","wind_direction":"无持续风向","wind_direction_degree":"","wind_speed":"3.0","wind_scale":"1","humidity":"86"}],"last_update":"2025-02-13T08:00:00+08:00"}]}
+深圳 2025-02-13 阴 temperature:14~22
+深圳 2025-02-14 多云 temperature:15~21
+深圳 2025-02-15 阴 temperature:16~22
+[0;32mI (144263) https_req: connection closed[0m
+[0;32mI (144273) https_req: 10...[0m
+[0;32mI (145273) https_req: 9...[0m
+[0;32mI (146273) https_req: 8...[0m
+[0;32mI (147273) https_req: 7...[0m
+[0;32mI (147813) wifi:state: run -> init (0)[0m
+[0;32mI (147823) wifi:pm stop, total sleep time: 69022633 us / 72578624 us[0m
+
+[0;32mI (147823) wifi:<ba-del>idx:0, tid:0[0m
+[0;32mI (147823) wifi:new:<4,0>, old:<4,0>, ap:<255,255>, sta:<4,0>, prof:1[0m
+[0;32mI (148273) https_req: 6...[0m
+[0;32mI (149273) https_req: 5...[0m
+[0;32mI (150273) https_req: 4...[0m
+[0;32mI (151273) https_req: 3...[0m
+[0;32mI (152273) https_req: 2...[0m
+[0;32mI (153273) https_req: 1...[0m
+[0;32mI (154273) https_req: 0...[0m
+[0;32mI (155273) https_req: Minimum free heap size: 102572 bytes[0m
+[0;32mI (155273) https_req: Finish https_request[0m
+after sync tim_stamp: 1739448651
+[0;32mI (196053) myNTP: tim_write_into_nvs successful[0m
+[0;32mI (196053) myNTP: 4th: The current date/time in BeiJing is: Thu Feb 13 20:10:51 2025[0m
+[0;32mI (196053) myNTP: Updated time in NVS[0m
+[0;32mI (256053) myNTP: tim_write_into_nvs successful[0m
+[0;32mI (256053) myNTP: 5th: The current date/time in BeiJing is: Thu Feb 13 20:11:51 2025[0m
+[0;32mI (256083) https_req: Start 3th https_request[0m
+[0;32mI (256083) https_req: Updating time from NVS[0m
+time in nvs:1739448711
+[0;32mI (256083) https_req: https_request using crt bundle[0m
+[0;31mE (256093) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (256093) esp-tls: Failed to open new connection[0m
+[0;31mE (256103) https_req: Connection failed...[0m
+[0;32mI (256103) https_req: 10...[0m
+[0;32mI (257103) https_req: 9...[0m
+[0;32mI (258103) https_req: 8...[0m
+[0;32mI (259103) https_req: 7...[0m
+[0;32mI (260103) https_req: 6...[0m
+[0;32mI (261103) https_req: 5...[0m
+[0;32mI (262103) https_req: 4...[0m
+[0;32mI (263103) https_req: 3...[0m
+[0;32mI (264103) https_req: 2...[0m
+[0;32mI (265103) https_req: 1...[0m
+[0;32mI (266103) https_req: 0...[0m
+[0;32mI (267103) https_req: Minimum free heap size: 102572 bytes[0m
+[0;32mI (267103) https_req: Finish https_request[0m
+[0;32mI (316053) myNTP: tim_write_into_nvs successful[0m
+[0;32mI (316053) myNTP: 6th: The current date/time in BeiJing is: Thu Feb 13 20:12:51 2025[0m
+after sync tim_stamp: 1739448831
+[0;32mI (376053) myNTP: Updated time in NVS[0m
+[0;32mI (376053) myNTP: tim_write_into_nvs successful[0m
+[0;32mI (376053) myNTP: 7th: The current date/time in BeiJing is: Thu Feb 13 20:13:51 2025[0m
+[0;32mI (376083) https_req: Start 4th https_request[0m
+[0;32mI (376083) https_req: Updating time from NVS[0m
+time in nvs:1739448831
+[0;32mI (376083) https_req: https_request using crt bundle[0m
+[0;31mE (383083) esp-tls: couldn't get hostname for :api.seniverse.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (383083) esp-tls: Failed to open new connection[0m
+[0;31mE (383083) https_req: Connection failed...[0m
+[0;32mI (383093) https_req: 10...[0m
+[0;32mI (384093) https_req: 9...[0m
+[0;32mI (385093) https_req: 8...[0m
+[0;32mI (386093) https_req: 7...[0m
+[0;32mI (387093) https_req: 6...[0m
+[0;32mI (388093) https_req: 5...[0m
+[0;32mI (389093) https_req: 4...[0m
+[0;32mI (390093) https_req: 3...[0m
+[0;32mI (391093) https_req: 2...[0m
+[0;32mI (392093) https_req: 1...[0m
+[0;32mI (393093) https_req: 0...[0m
+[0;32mI (394093) https_req: Minimum free heap size: 102572 bytes[0m
+[0;32mI (394093) https_req: Finish https_request[0m
+[0;32mI (436053) myNTP: tim_write_into_nvs successful[0m
+[0;32mI (436053) myNTP: 8th: The current date/time in BeiJing is: Thu Feb 13 20:14:51 2025[0m
+[0;32mI (496053) myNTP: tim_write_into_nvs successful[0m
+[0;32mI (496053) myNTP: 9th: The current date/time in BeiJing is: Thu Feb 13 20:15:51 2025[0m
+[0;32mI (496083) https_req: Start 5th https_request[0m
+[0;32mI (496083) https_req: Updating time from NVS[0m
+time in nvs:1739448951
+[0;32mI (496083) https_req: https_request using crt bundle[0m
+[0;31mE (503083) esp-tls: couldn't get hostname for :api.seniverse.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (503083) esp-tls: Failed to open new connection[0m
+[0;31mE (503083) https_req: Connection failed...[0m
+[0;32mI (503093) https_req: 10...[0m
+[0;32mI (504093) https_req: 9...[0m
+[0;32mI (505093) https_req: 8...[0m
+[0;32mI (506093) https_req: 7...[0m
+[0;32mI (507093) https_req: 6...[0m
+[0;32mI (508093) https_req: 5...[0m
+[0;32mI (509093) https_req: 4...[0m
+[0;32mI (510093) https_req: 3...[0m
+[0;32mI (511093) https_req: 2...[0m
+[0;32mI (512093) https_req: 1...[0m
+[0;32mI (513093) https_req: 0...[0m
+[0;32mI (514093) https_req: Minimum free heap size: 102572 bytes[0m
+[0;32mI (514093) https_req: Finish https_request[0m
+after sync tim_stamp: 1739449011
+[0;32mI (556053) myNTP: Updated time in NVS[0m
+[0;32mI (556053) myNTP: tim_write_into_nvs successful[0m
+[0;32mI (556053) myNTP: 10th: The current date/time in BeiJing is: Thu Feb 13 20:16:51 2025[0m
+[0;32mI (616053) myNTP: tim_write_into_nvs successful[0m
+[0;32mI (616053) myNTP: 11th: The current date/time in BeiJing is: Thu Feb 13 20:17:51 2025[0m
+[0;32mI (616083) https_req: Start 6th https_request[0m
+[0;32mI (616083) https_req: Updating time from NVS[0m
+time in nvs:1739449071
+[0;32mI (616083) https_req: https_request using crt bundle[0m
+[0;31mE (623083) esp-tls: couldn't get hostname for :api.seniverse.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (623083) esp-tls: Failed to open new connection[0m
+[0;31mE (623083) https_req: Connection failed...[0m
+[0;32mI (623093) https_req: 10...[0m
+[0;32mI (624093) https_req: 9...[0m
+[0;32mI (625093) https_req: 8...[0m
+[0;32mI (626093) https_req: 7...[0m
+[0;32mI (627093) https_req: 6...[0m
+[0;32mI (628093) https_req: 5...[0m
+[0;32mI (629093) https_req: 4...[0m
+[0;32mI (630093) https_req: 3...[0m
+[0;32mI (631093) https_req: 2...[0m
+[0;32mI (632093) https_req: 1...[0m
+[0;32mI (633093) https_req: 0...[0m
+[0;32mI (634093) https_req: Minimum free heap size: 102572 bytes[0m
+[0;32mI (634093) https_req: Finish https_request[0m
+[0;32mI (676053) myNTP: tim_write_into_nvs successful[0m
+[0;32mI (676053) myNTP: 12th: The current date/time in BeiJing is: Thu Feb 13 20:18:51 2025[0m
+[0;32mI (730193) wifi:new:<4,0>, old:<4,0>, ap:<255,255>, sta:<4,0>, prof:1[0m
+[0;32mI (730193) wifi:state: init -> auth (b0)[0m
+[0;32mI (730203) wifi:state: auth -> assoc (0)[0m
+[0;32mI (730703) wifi:state: assoc -> init (2c0)[0m
+[0;32mI (730713) wifi:new:<4,0>, old:<4,0>, ap:<255,255>, sta:<4,0>, prof:1[0m
+after sync tim_stamp: 1739449191
+[0;32mI (736053) myNTP: tim_write_into_nvs successful[0m
+[0;32mI (736053) myNTP: 13th: The current date/time in BeiJing is: Thu Feb 13 20:19:51 2025[0m
+[0;32mI (736053) myNTP: Updated time in NVS[0m
+[0;32mI (736083) https_req: Start 7th https_request[0m
+[0;32mI (736083) https_req: Updating time from NVS[0m
+time in nvs:1739449191
+[0;32mI (736083) https_req: https_request using crt bundle[0m
+[0;31mE (743083) esp-tls: couldn't get hostname for :api.seniverse.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (743083) esp-tls: Failed to open new connection[0m
+[0;31mE (743083) https_req: Connection failed...[0m
+[0;32mI (743093) https_req: 10...[0m
+[0;32mI (744093) https_req: 9...[0m
+[0;32mI (745093) https_req: 8...[0m
+[0;32mI (746093) https_req: 7...[0m
+[0;32mI (747093) https_req: 6...[0m
+[0;32mI (748093) https_req: 5...[0m
+[0;32mI (749093) https_req: 4...[0m
+[0;32mI (750093) https_req: 3...[0m
+[0;32mI (751093) https_req: 2...[0m
+[0;32mI (752093) https_req: 1...[0m
+[0;32mI (753093) https_req: 0...[0m
+[0;32mI (754093) https_req: Minimum free heap size: 102572 bytes[0m
+[0;32mI (754093) https_req: Finish https_request[0m
+[0;32mI (796053) myNTP: tim_write_into_nvs successful[0m
+[0;32mI (796053) myNTP: 14th: The current date/time in BeiJing is: Thu Feb 13 20:20:51 2025[0m
+[0;32mI (856053) myNTP: tim_write_into_nvs successful[0m
+[0;32mI (856053) myNTP: 15th: The current date/time in BeiJing is: Thu Feb 13 20:21:51 2025[0m
+[0;32mI (856083) https_req: Start 8th https_request[0m
+[0;32mI (856083) https_req: Updating time from NVS[0m
+time in nvs:1739449311
+[0;32mI (856083) https_req: https_request using crt bundle[0m
+[0;31mE (863083) esp-tls: couldn't get hostname for :api.seniverse.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (863083) esp-tls: Failed to open new connection[0m
+[0;31mE (863083) https_req: Connection failed...[0m
+[0;32mI (863093) https_req: 10...[0m
+[0;32mI (864093) https_req: 9...[0m
+[0;32mI (865093) https_req: 8...[0m
+[0;32mI (866093) https_req: 7...[0m
+[0;32mI (867093) https_req: 6...[0m
+[0;32mI (868093) https_req: 5...[0m
+[0;32mI (869093) https_req: 4...[0m
+[0;32mI (870093) https_req: 3...[0m
+[0;32mI (871093) https_req: 2...[0m
+[0;32mI (872093) https_req: 1...[0m
+[0;32mI (873093) https_req: 0...[0m
+[0;32mI (874093) https_req: Minimum free heap size: 102572 bytes[0m
+[0;32mI (874093) https_req: Finish https_request[0m
+[0;32mI (914553) wifi:new:<4,0>, old:<4,0>, ap:<255,255>, sta:<4,0>, prof:1[0m
+[0;32mI (914553) wifi:state: init -> auth (b0)[0m
+[0;32mI (914573) wifi:state: auth -> assoc (0)[0m
+[0;32mI (914593) wifi:state: assoc -> run (10)[0m
+[0;32mI (914643) wifi:connected with Honor100, aid = 7, channel 4, BW20, bssid = f6:b9:58:d6:0d:36[0m
+[0;32mI (914643) wifi:security: WPA2-PSK, phy: bgn, rssi: -46[0m
+[0;32mI (914653) wifi:pm start, type: 1[0m
+
+[0;32mI (914653) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (914663) myWIFI: conneted success![0m
+[0;32mI (914713) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (914713) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (915663) esp_netif_handlers: sta ip: 192.168.43.221, mask: 255.255.255.0, gw: 192.168.43.1[0m
+[0;32mI (915663) myWIFI: WIFI GOT IP[0m
+after sync tim_stamp: 1739449371
+[0;32mI (916053) myNTP: tim_write_into_nvs successful[0m
+[0;32mI (916053) myNTP: 16th: The current date/time in BeiJing is: Thu Feb 13 20:22:51 2025[0m
+[0;32mI (916053) myNTP: Updated time in NVS[0m
+[0;32mI (936343) wifi:state: run -> init (0)[0m
+[0;32mI (936353) wifi:pm stop, total sleep time: 19979373 us / 21699653 us[0m
+
+[0;32mI (936353) wifi:new:<4,0>, old:<4,0>, ap:<255,255>, sta:<4,0>, prof:1[0m
+[0;32mI (976053) myNTP: tim_write_into_nvs successful[0m
+[0;32mI (976053) myNTP: 17th: The current date/time in BeiJing is: Thu Feb 13 20:23:51 2025[0m
+[0;32mI (976083) https_req: Start 9th https_request[0m
+[0;32mI (976083) https_req: Updating time from NVS[0m
+time in nvs:1739449431
+[0;32mI (976083) https_req: https_request using crt bundle[0m
+[0;31mE (983083) esp-tls: couldn't get hostname for :api.seniverse.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (983083) esp-tls: Failed to open new connection[0m
+[0;31mE (983083) https_req: Connection failed...[0m
+[0;32mI (983093) https_req: 10...[0m
+[0;32mI (984093) https_req: 9...[0m
+[0;32mI (985093) https_req: 8...[0m
+[0;32mI (986093) https_req: 7...[0m
+[0;32mI (987093) https_req: 6...[0m
+[0;32mI (988093) https_req: 5...[0m
+[0;32mI (989093) https_req: 4...[0m
+[0;32mI (990093) https_req: 3...[0m
+[0;32mI (991093) https_req: 2...[0m
+[0;32mI (992093) https_req: 1...[0m
+[0;32mI (993093) https_req: 0...[0m
+[0;32mI (994093) https_req: Minimum free heap size: 102572 bytes[0m
+[0;32mI (994093) https_req: Finish https_request[0m
+[0;32mI (1036053) myNTP: tim_write_into_nvs successful[0m
+[0;32mI (1036053) myNTP: 18th: The current date/time in BeiJing is: Thu Feb 13 20:24:51 2025[0m
+after sync tim_stamp: 1739449551
+[0;32mI (1096053) myNTP: tim_write_into_nvs successful[0m
+[0;32mI (1096053) myNTP: 19th: The current date/time in BeiJing is: Thu Feb 13 20:25:51 2025[0m
+[0;32mI (1096053) myNTP: Updated time in NVS[0m
+[0;32mI (1096083) https_req: Start 10th https_request[0m
+[0;32mI (1096083) https_req: Updating time from NVS[0m
+time in nvs:1739449551
+[0;32mI (1096083) https_req: https_request using crt bundle[0m
+[0;31mE (1103083) esp-tls: couldn't get hostname for :api.seniverse.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1103083) esp-tls: Failed to open new connection[0m
+[0;31mE (1103083) https_req: Connection failed...[0m
+[0;32mI (1103093) https_req: 10...[0m
+[0;32mI (1104093) https_req: 9...[0m
+[0;32mI (1105093) https_req: 8...[0m
+[0;32mI (1106093) https_req: 7...[0m
+[0;32mI (1107093) https_req: 6...[0m
+[0;32mI (1108093) https_req: 5...[0m
+[0;32mI (1109093) https_req: 4...[0m
+[0;32mI (1110093) https_req: 3...[0m
+[0;32mI (1111093) https_req: 2...[0m
+[0;32mI (1112093) https_req: 1...[0m
+[0;32mI (1113093) https_req: 0...[0m
+[0;32mI (1114093) https_req: Minimum free heap size: 102572 bytes[0m
+[0;32mI (1114093) https_req: Finish https_request[0m
+[0;32mI (1156053) myNTP: tim_write_into_nvs successful[0m
+[0;32mI (1156053) myNTP: 20th: The current date/time in BeiJing is: Thu Feb 13 20:26:51 2025[0m
+[0;32mI (1216053) myNTP: tim_write_into_nvs successful[0m
+[0;32mI (1216053) myNTP: 21th: The current date/time in BeiJing is: Thu Feb 13 20:27:51 2025[0m
+[0;32mI (1216083) https_req: Start 11th https_request[0m
+[0;32mI (1216083) https_req: Updating time from NVS[0m
+time in nvs:1739449671
+[0;32mI (1216083) https_req: https_request using crt bundle[0m
+[0;31mE (1223083) esp-tls: couldn't get hostname for :api.seniverse.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1223083) esp-tls: Failed to open new connection[0m
+[0;31mE (1223083) https_req: Connection failed...[0m
+[0;32mI (1223093) https_req: 10...[0m
+[0;32mI (1224093) https_req: 9...[0m
+[0;32mI (1225093) https_req: 8...[0m
+[0;32mI (1226093) https_req: 7...[0m
+[0;32mI (1227093) https_req: 6...[0m
+[0;32mI (1228093) https_req: 5...[0m
+[0;32mI (1229093) https_req: 4...[0m
+[0;32mI (1230093) https_req: 3...[0m
+[0;32mI (1231093) https_req: 2...[0m
+[0;32mI (1232093) https_req: 1...[0m
+[0;32mI (1233093) https_req: 0...[0m
+[0;32mI (1234093) https_req: Minimum free heap size: 102572 bytes[0m
+[0;32mI (1234093) https_req: Finish https_request[0m
+after sync tim_stamp: 1739449731
+[0;32mI (1276053) myNTP: Updated time in NVS[0m
+[0;32mI (1276053) myNTP: tim_write_into_nvs successful[0m
+[0;32mI (1276053) myNTP: 22th: The current date/time in BeiJing is: Thu Feb 13 20:28:51 2025[0m
+[0;32mI (1336053) myNTP: tim_write_into_nvs successful[0m
+[0;32mI (1336053) myNTP: 23th: The current date/time in BeiJing is: Thu Feb 13 20:29:51 2025[0m
+[0;32mI (1336083) https_req: Start 12th https_request[0m
+[0;32mI (1336083) https_req: Updating time from NVS[0m
+time in nvs:1739449791
+[0;32mI (1336083) https_req: https_request using crt bundle[0m
+[0;31mE (1343083) esp-tls: couldn't get hostname for :api.seniverse.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1343083) esp-tls: Failed to open new connection[0m
+[0;31mE (1343083) https_req: Connection failed...[0m
+[0;32mI (1343093) https_req: 10...[0m
+[0;32mI (1344093) https_req: 9...[0m
+[0;32mI (1345093) https_req: 8...[0m
+[0;32mI (1346093) https_req: 7...[0m
+[0;32mI (1347093) https_req: 6...[0m
+[0;32mI (1348093) https_req: 5...[0m
+[0;32mI (1349093) https_req: 4...[0m
+[0;32mI (1350093) https_req: 3...[0m
+[0;32mI (1351093) https_req: 2...[0m
+[0;32mI (1352093) https_req: 1...[0m
+[0;32mI (1353093) https_req: 0...[0m
+[0;32mI (1354093) https_req: Minimum free heap size: 102572 bytes[0m
+[0;32mI (1354093) https_req: Finish https_request[0m
+[0;32mI (1396053) myNTP: tim_write_into_nvs successful[0m
+[0;32mI (1396053) myNTP: 24th: The current date/time in BeiJing is: Thu Feb 13 20:30:51 2025[0m
+after sync tim_stamp: 1739449911
+[0;32mI (1456053) myNTP: Updated time in NVS[0m
+[0;32mI (1456053) myNTP: tim_write_into_nvs successful[0m
+[0;32mI (1456053) myNTP: 25th: The current date/time in BeiJing is: Thu Feb 13 20:31:51 2025[0m
+[0;32mI (1456083) https_req: Start 13th https_request[0m
+[0;32mI (1456083) https_req: Updating time from NVS[0m
+time in nvs:1739449911
+[0;32mI (1456083) https_req: https_request using crt bundle[0m
+[0;31mE (1463083) esp-tls: couldn't get hostname for :api.seniverse.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1463083) esp-tls: Failed to open new connection[0m
+[0;31mE (1463083) https_req: Connection failed...[0m
+[0;32mI (1463093) https_req: 10...[0m
+[0;32mI (1464093) https_req: 9...[0m
+[0;32mI (1465093) https_req: 8...[0m
+[0;32mI (1466093) https_req: 7...[0m
+[0;32mI (1467093) https_req: 6...[0m
+[0;32mI (1468093) https_req: 5...[0m
+[0;32mI (1469093) https_req: 4...[0m
+[0;32mI (1470093) https_req: 3...[0m
+[0;32mI (1471093) https_req: 2...[0m
+[0;32mI (1472093) https_req: 1...[0m
+[0;32mI (1473093) https_req: 0...[0m
+[0;32mI (1474093) https_req: Minimum free heap size: 102572 bytes[0m
+[0;32mI (1474093) https_req: Finish https_request[0m
+[0;32mI (1516053) myNTP: tim_write_into_nvs successful[0m
+[0;32mI (1516053) myNTP: 26th: The current date/time in BeiJing is: Thu Feb 13 20:32:51 2025[0m
+[0;32mI (1576053) myNTP: tim_write_into_nvs successful[0m
+[0;32mI (1576053) myNTP: 27th: The current date/time in BeiJing is: Thu Feb 13 20:33:51 2025[0m
+[0;32mI (1576083) https_req: Start 14th https_request[0m
+[0;32mI (1576083) https_req: Updating time from NVS[0m
+time in nvs:1739450031
+[0;32mI (1576083) https_req: https_request using crt bundle[0m
+[0;31mE (1583083) esp-tls: couldn't get hostname for :api.seniverse.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1583083) esp-tls: Failed to open new connection[0m
+[0;31mE (1583083) https_req: Connection failed...[0m
+[0;32mI (1583093) https_req: 10...[0m
+[0;32mI (1584093) https_req: 9...[0m
+[0;32mI (1585093) https_req: 8...[0m
+[0;32mI (1586093) https_req: 7...[0m
+[0;32mI (1587093) https_req: 6...[0m
+[0;32mI (1588093) https_req: 5...[0m
+[0;32mI (1589093) https_req: 4...[0m
+[0;32mI (1590093) https_req: 3...[0m
+[0;32mI (1591093) https_req: 2...[0m
+[0;32mI (1592093) https_req: 1...[0m
+[0;32mI (1593093) https_req: 0...[0m
+[0;32mI (1594093) https_req: Minimum free heap size: 102572 bytes[0m
+[0;32mI (1594093) https_req: Finish https_request[0m
+after sync tim_stamp: 1739450091
+[0;32mI (1636053) myNTP: Updated time in NVS[0m
+[0;32mI (1636053) myNTP: tim_write_into_nvs successful[0m
+[0;32mI (1636053) myNTP: 28th: The current date/time in BeiJing is: Thu Feb 13 20:34:51 2025[0m
+[0;32mI (1696053) myNTP: tim_write_into_nvs successful[0m
+[0;32mI (1696053) myNTP: 29th: The current date/time in BeiJing is: Thu Feb 13 20:35:51 2025[0m
+[0;32mI (1696083) https_req: Start 15th https_request[0m
+[0;32mI (1696083) https_req: Updating time from NVS[0m
+time in nvs:1739450151
+[0;32mI (1696083) https_req: https_request using crt bundle[0m
+[0;31mE (1703083) esp-tls: couldn't get hostname for :api.seniverse.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1703083) esp-tls: Failed to open new connection[0m
+[0;31mE (1703083) https_req: Connection failed...[0m
+[0;32mI (1703093) https_req: 10...[0m
+[0;32mI (1704093) https_req: 9...[0m
+[0;32mI (1705093) https_req: 8...[0m
+[0;32mI (1706093) https_req: 7...[0m
+[0;32mI (1707093) https_req: 6...[0m
+[0;32mI (1708093) https_req: 5...[0m
+[0;32mI (1709093) https_req: 4...[0m
+[0;32mI (1710093) https_req: 3...[0m
+[0;32mI (1711093) https_req: 2...[0m
+[0;32mI (1712093) https_req: 1...[0m
+[0;32mI (1713093) https_req: 0...[0m
+[0;32mI (1714093) https_req: Minimum free heap size: 102572 bytes[0m
+[0;32mI (1714093) https_req: Finish https_request[0m
+[0;32mI (1756053) myNTP: tim_write_into_nvs successful[0m
+[0;32mI (1756053) myNTP: 30th: The current date/time in BeiJing is: Thu Feb 13 20:36:51 2025[0m
+after sync tim_stamp: 1739450271
+[0;32mI (1816053) myNTP: Updated time in NVS[0m
+[0;32mI (1816053) myNTP: tim_write_into_nvs successful[0m
+[0;32mI (1816053) myNTP: 31th: The current date/time in BeiJing is: Thu Feb 13 20:37:51 2025[0m
+[0;32mI (1816083) https_req: Start 16th https_request[0m
+[0;32mI (1816083) https_req: Updating time from NVS[0m
+time in nvs:1739450271
+[0;32mI (1816083) https_req: https_request using crt bundle[0m
+[0;31mE (1823083) esp-tls: couldn't get hostname for :api.seniverse.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1823083) esp-tls: Failed to open new connection[0m
+[0;31mE (1823083) https_req: Connection failed...[0m
+[0;32mI (1823093) https_req: 10...[0m
+[0;32mI (1824093) https_req: 9...[0m
+[0;32mI (1825093) https_req: 8...[0m
+[0;32mI (1826093) https_req: 7...[0m
+[0;32mI (1827093) https_req: 6...[0m
+[0;32mI (1828093) https_req: 5...[0m
+[0;32mI (1829093) https_req: 4...[0m
+[0;32mI (1830093) https_req: 3...[0m
+[0;32mI (1831093) https_req: 2...[0m
+[0;32mI (1832093) https_req: 1...[0m
+[0;32mI (1833093) https_req: 0...[0m
+[0;32mI (1834093) https_req: Minimum free heap size: 102572 bytes[0m
+[0;32mI (1834093) https_req: Finish https_request[0m
+[0;32mI (1876053) myNTP: tim_write_into_nvs successful[0m
+[0;32mI (1876053) myNTP: 32th: The current date/time in BeiJing is: Thu Feb 13 20:38:51 2025[0m
+[0;32mI (1936053) myNTP: tim_write_into_nvs successful[0m
+[0;32mI (1936053) myNTP: 33th: The current date/time in BeiJing is: Thu Feb 13 20:39:51 2025[0m
+[0;32mI (1936083) https_req: Start 17th https_request[0m
+[0;32mI (1936083) https_req: Updating time from NVS[0m
+time in nvs:1739450391
+[0;32mI (1936083) https_req: https_request using crt bundle[0m
+[0;31mE (1943083) esp-tls: couldn't get hostname for :api.seniverse.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1943083) esp-tls: Failed to open new connection[0m
+[0;31mE (1943083) https_req: Connection failed...[0m
+[0;32mI (1943093) https_req: 10...[0m
+[0;32mI (1944093) https_req: 9...[0m
+[0;32mI (1945093) https_req: 8...[0m
+[0;32mI (1946093) https_req: 7...[0m
+[0;32mI (1947093) https_req: 6...[0m
+[0;32mI (1948093) https_req: 5...[0m
+[0;32mI (1949093) https_req: 4...[0m
+[0;32mI (1950093) https_req: 3...[0m
+[0;32mI (1951093) https_req: 2...[0m
+[0;32mI (1952093) https_req: 1...[0m
+[0;32mI (1953093) https_req: 0...[0m
+[0;32mI (1954093) https_req: Minimum free heap size: 102572 bytes[0m
+[0;32mI (1954093) https_req: Finish https_request[0m
+after sync tim_stamp: 1739450451
+[0;32mI (1996053) myNTP: Updated time in NVS[0m
+[0;32mI (1996053) myNTP: tim_write_into_nvs successful[0m
+[0;32mI (1996053) myNTP: 34th: The current date/time in BeiJing is: Thu Feb 13 20:40:51 2025[0m
+[0;32mI (2056053) myNTP: tim_write_into_nvs successful[0m
+[0;32mI (2056053) myNTP: 35th: The current date/time in BeiJing is: Thu Feb 13 20:41:51 2025[0m
+[0;32mI (2056083) https_req: Start 18th https_request[0m
+[0;32mI (2056083) https_req: Updating time from NVS[0m
+time in nvs:1739450511
+[0;32mI (2056083) https_req: https_request using crt bundle[0m
+[0;31mE (2063083) esp-tls: couldn't get hostname for :api.seniverse.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2063083) esp-tls: Failed to open new connection[0m
+[0;31mE (2063083) https_req: Connection failed...[0m
+[0;32mI (2063093) https_req: 10...[0m
+[0;32mI (2064093) https_req: 9...[0m
+[0;32mI (2065093) https_req: 8...[0m
+[0;32mI (2066093) https_req: 7...[0m
+[0;32mI (2067093) https_req: 6...[0m
+[0;32mI (2068093) https_req: 5...[0m
+[0;32mI (2069093) https_req: 4...[0m
+[0;32mI (2070093) https_req: 3...[0m
+[0;32mI (2071093) https_req: 2...[0m
+[0;32mI (2072093) https_req: 1...[0m
+[0;32mI (2073093) https_req: 0...[0m
+[0;32mI (2074093) https_req: Minimum free heap size: 102572 bytes[0m
+[0;32mI (2074093) https_req: Finish https_request[0m
+[0;32mI (2116053) myNTP: tim_write_into_nvs successful[0m
+[0;32mI (2116053) myNTP: 36th: The current date/time in BeiJing is: Thu Feb 13 20:42:51 2025[0m
+after sync tim_stamp: 1739452071
+[0;32mI (3616053) myNTP: tim_write_into_nvs successful[0m
+[0;32mI (3616053) myNTP: 61th: The current date/time in BeiJing is: Thu Feb 13 21:07:51 2025[0m
+[0;32mI (3616053) myNTP: Updated time in NVS[0m
+[0;32mI (3616083) https_req: Start 31th https_request[0m
+[0;32mI (3616083) https_req: Updating time from NVS[0m
+time in nvs:1739452071
+[0;32mI (3616083) https_req: https_request using crt bundle[0m
+[0;31mE (3623083) esp-tls: couldn't get hostname for :api.seniverse.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3623083) esp-tls: Failed to open new connection[0m
+[0;31mE (3623083) https_req: Connection failed...[0m
+[0;32mI (3623093) https_req: 10...[0m
+[0;32mI (3624093) https_req: 9...[0m
+[0;32mI (3625093) https_req: 8...[0m
+[0;32mI (3626093) https_req: 7...[0m
+[0;32mI (3627093) https_req: 6...[0m
+[0;32mI (3628093) https_req: 5...[0m
+[0;32mI (3629093) https_req: 4...[0m
+[0;32mI (3630093) https_req: 3...[0m
+[0;32mI (3631093) https_req: 2...[0m
+[0;32mI (3632093) https_req: 1...[0m
+[0;32mI (3633093) https_req: 0...[0m
+[0;32mI (3634093) https_req: Minimum free heap size: 102572 bytes[0m
+[0;32mI (3634093) https_req: Finish https_request[0m
+[0;32mI (3676103) myNTP: tim_write_into_nvs successful[0m
+[0;32mI (3676103) myNTP: 62th: The current date/time in BeiJing is: Thu Feb 13 21:08:51 2025[0m
+[0;32mI (3736053) myNTP: tim_write_into_nvs successful[0m
+[0;32mI (3736053) myNTP: 63th: The current date/time in BeiJing is: Thu Feb 13 21:09:51 2025[0m
+[0;32mI (3736083) https_req: Start 32th https_request[0m
+[0;32mI (3736083) https_req: Updating time from NVS[0m
+time in nvs:1739452191
+[0;32mI (3736083) https_req: https_request using crt bundle[0m
+[0;31mE (3743083) esp-tls: couldn't get hostname for :api.seniverse.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3743083) esp-tls: Failed to open new connection[0m
+[0;31mE (3743083) https_req: Connection failed...[0m
+[0;32mI (3743093) https_req: 10...[0m
+[0;32mI (3744093) https_req: 9...[0m
+[0;32mI (3745093) https_req: 8...[0m
+[0;32mI (3746093) https_req: 7...[0m
+[0;32mI (3747093) https_req: 6...[0m
+[0;32mI (3748093) https_req: 5...[0m
+[0;32mI (3749093) https_req: 4...[0m
+[0;32mI (3750093) https_req: 3...[0m
+[0;32mI (3751093) https_req: 2...[0m
+[0;32mI (3752093) https_req: 1...[0m
+[0;32mI (3753093) https_req: 0...[0m
+[0;32mI (3754093) https_req: Minimum free heap size: 102572 bytes[0m
+[0;32mI (3754093) https_req: Finish https_request[0m
+[0;32mI (3774443) wifi:new:<11,0>, old:<4,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (3774443) wifi:state: init -> auth (b0)[0m
+[0;32mI (3774453) wifi:state: auth -> assoc (0)[0m
+[0;32mI (3774473) wifi:state: assoc -> run (10)[0m
+[0;32mI (3774513) wifi:connected with Honor100, aid = 5, channel 11, BW20, bssid = f6:b9:58:d6:0d:36[0m
+[0;32mI (3774513) wifi:security: WPA2-PSK, phy: bgn, rssi: -36[0m
+[0;32mI (3774533) wifi:pm start, type: 1[0m
+
+[0;32mI (3774533) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (3774533) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (3774533) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (3774543) myWIFI: conneted success![0m
+[0;32mI (3775543) esp_netif_handlers: sta ip: 192.168.43.221, mask: 255.255.255.0, gw: 192.168.43.1[0m
+[0;32mI (3775543) myWIFI: WIFI GOT IP[0m
+after sync tim_stamp: 1739452251
+[0;32mI (3796053) myNTP: tim_write_into_nvs successful[0m
+[0;32mI (3796053) myNTP: 64th: The current date/time in BeiJing is: Thu Feb 13 21:10:51 2025[0m
+[0;32mI (3796053) myNTP: Updated time in NVS[0m
+[0;32mI (3856053) myNTP: tim_write_into_nvs successful[0m
+[0;32mI (3856053) myNTP: 65th: The current date/time in BeiJing is: Thu Feb 13 21:11:51 2025[0m
+[0;32mI (3856083) https_req: Start 33th https_request[0m
+[0;32mI (3856083) https_req: Updating time from NVS[0m
+time in nvs:1739452311
+[0;32mI (3856083) https_req: https_request using crt bundle[0m
+[0;32mI (3856133) wifi:<ba-add>idx:0 (ifx:0, f6:b9:58:d6:0d:36), tid:0, ssn:1, winSize:64[0m
+[0;32mI (3856543) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (3857273) https_req: Connection established...[0m
+[0;32mI (3857273) https_req: 193 bytes written[0m
+[0;32mI (3857273) https_req: Reading HTTP response...[0m
+HTTP/1.1 200 OK
+Date: Thu, 13 Feb 2025 13:11:52 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 1001
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"3e9-IrzSCl6tv7gTZ5TW8ngCPZNUg/o"
+x-powered-by: Express
+x-ratelimit-limit: 20;w=60
+x-ratelimit-remaining: 19
+x-ratelimit-reset: 60.000
+x-request-id: GCPGqaIN3C34uPaBe9lB
+x-tenant-id: 0a2eb6f6-2727-482d-a691-e6d0848af3d9
+
+{"results":[{"location":{"id":"WS10730EM8EV","name":"深圳","country":"CN","path":"深圳,深圳,广东,中国","timezone":"Asia/Shanghai","timezone_offset":"+08:00"},"daily":[{"date":"2025-02-13","text_day":"阴","code_day":"9","text_night":"阴","code_night":"9","high":"22","low":"14","rainfall":"0.00","precip":"0.00","wind_direction":"北","wind_direction_degree":"0","wind_speed":"23.4","wind_scale":"4","humidity":"71"},{"date":"2025-02-14","text_day":"多云","code_day":"4","text_night":"阴","code_night":"9","high":"21","low":"15","rainfall":"0.00","precip":"0.00","wind_direction":"无持续风向","wind_direction_degree":"","wind_speed":"8.4","wind_scale":"2","humidity":"79"},{"date":"2025-02-15","text_day":"阴","code_day":"9","text_night":"多云","code_night":"4","high":"22","low":"16","rainfall":"0.00","precip":"0.00","wind_direction":"无持续风向","wind_direction_degree":"","wind_speed":"3.0","wind_scale":"1","humidity":"86"}],"last_update":"2025-02-13T08:00:00+08:00"}]}
+深圳 2025-02-13 阴 temperature:14~22
+深圳 2025-02-14 多云 temperature:15~21
+深圳 2025-02-15 阴 temperature:16~22
+[0;32mI (3862603) https_req: connection closed[0m
+[0;32mI (3862603) https_req: 10...[0m
+[0;32mI (3863603) https_req: 9...[0m
+[0;32mI (3864603) https_req: 8...[0m
+[0;32mI (3865603) https_req: 7...[0m
+[0;32mI (3866603) https_req: 6...[0m
+[0;32mI (3867603) https_req: 5...[0m
+[0;32mI (3868603) https_req: 4...[0m
+[0;32mI (3869603) https_req: 3...[0m
+[0;32mI (3870603) https_req: 2...[0m
+[0;32mI (3871603) https_req: 1...[0m
+[0;32mI (3872603) https_req: 0...[0m
+[0;32mI (3873603) https_req: Minimum free heap size: 102572 bytes[0m
+[0;32mI (3873603) https_req: Finish https_request[0m
+[0;32mI (3916053) myNTP: tim_write_into_nvs successful[0m
+[0;32mI (3916053) myNTP: 66th: The current date/time in BeiJing is: Thu Feb 13 21:12:51 2025[0m
+after sync tim_stamp: 1739452431
+[0;32mI (3976053) myNTP: tim_write_into_nvs successful[0m
+[0;32mI (3976053) myNTP: 67th: The current date/time in BeiJing is: Thu Feb 13 21:13:51 2025[0m
+[0;32mI (3976053) myNTP: Updated time in NVS[0m
+[0;32mI (3976083) https_req: Start 34th https_request[0m
+[0;32mI (3976083) https_req: Updating time from NVS[0m
+time in nvs:1739452431
+[0;32mI (3976083) https_req: https_request using crt bundle[0m
+[0;32mI (3976553) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (3977133) https_req: Connection established...[0m
+[0;32mI (3977143) https_req: 193 bytes written[0m
+[0;32mI (3977143) https_req: Reading HTTP response...[0m
+HTTP/1.1 200 OK
+Date: Thu, 13 Feb 2025 13:13:52 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 1001
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"3e9-IrzSCl6tv7gTZ5TW8ngCPZNUg/o"
+x-powered-by: Express
+x-ratelimit-limit: 20;w=60
+x-ratelimit-remaining: 19
+x-ratelimit-reset: 60.000
+x-request-id: GCPGxYiBidpTNtnZeu2C
+x-tenant-id: 0a2eb6f6-2727-482d-a691-e6d0848af3d9
+
+{"results":[{"location":{"id":"WS10730EM8EV","name":"深圳","country":"CN","path":"深圳,深圳,广东,中国","timezone":"Asia/Shanghai","timezone_offset":"+08:00"},"daily":[{"date":"2025-02-13","text_day":"阴","code_day":"9","text_night":"阴","code_night":"9","high":"22","low":"14","rainfall":"0.00","precip":"0.00","wind_direction":"北","wind_direction_degree":"0","wind_speed":"23.4","wind_scale":"4","humidity":"71"},{"date":"2025-02-14","text_day":"多云","code_day":"4","text_night":"阴","code_night":"9","high":"21","low":"15","rainfall":"0.00","precip":"0.00","wind_direction":"无持续风向","wind_direction_degree":"","wind_speed":"8.4","wind_scale":"2","humidity":"79"},{"date":"2025-02-15","text_day":"阴","code_day":"9","text_night":"多云","code_night":"4","high":"22","low":"16","rainfall":"0.00","precip":"0.00","wind_direction":"无持续风向","wind_direction_degree":"","wind_speed":"3.0","wind_scale":"1","humidity":"86"}],"last_update":"2025-02-13T08:00:00+08:00"}]}
+深圳 2025-02-13 阴 temperature:14~22
+深圳 2025-02-14 多云 temperature:15~21
+深圳 2025-02-15 阴 temperature:16~22
+[0;32mI (3982403) https_req: connection closed[0m
+[0;32mI (3982403) https_req: 10...[0m
+[0;32mI (3983403) https_req: 9...[0m
+[0;32mI (3984403) https_req: 8...[0m
+[0;32mI (3985403) https_req: 7...[0m
+[0;32mI (3986403) https_req: 6...[0m
+[0;32mI (3987403) https_req: 5...[0m
+[0;32mI (3988403) https_req: 4...[0m
+[0;32mI (3989403) https_req: 3...[0m
+[0;32mI (3990403) https_req: 2...[0m
+[0;32mI (3991403) https_req: 1...[0m
+[0;32mI (3992403) https_req: 0...[0m
+[0;32mI (3993403) https_req: Minimum free heap size: 102572 bytes[0m
+[0;32mI (3993403) https_req: Finish https_request[0m
+[0;32mI (4036053) myNTP: tim_write_into_nvs successful[0m
+[0;32mI (4036053) myNTP: 68th: The current date/time in BeiJing is: Thu Feb 13 21:14:51 2025[0m
+[0;32mI (4096053) myNTP: tim_write_into_nvs successful[0m
+[0;32mI (4096053) myNTP: 69th: The current date/time in BeiJing is: Thu Feb 13 21:15:51 2025[0m
+[0;32mI (4096083) https_req: Start 35th https_request[0m
+[0;32mI (4096083) https_req: Updating time from NVS[0m
+time in nvs:1739452551
+[0;32mI (4096083) https_req: https_request using crt bundle[0m
+[0;32mI (4096573) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (4097303) https_req: Connection established...[0m
+[0;32mI (4097303) https_req: 193 bytes written[0m
+[0;32mI (4097303) https_req: Reading HTTP response...[0m
+HTTP/1.1 200 OK
+Date: Thu, 13 Feb 2025 13:15:52 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 1001
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"3e9-IrzSCl6tv7gTZ5TW8ngCPZNUg/o"
+x-powered-by: Express
+x-ratelimit-limit: 20;w=60
+x-ratelimit-remaining: 19
+x-ratelimit-reset: 60.000
+x-request-id: GCPG4YP/4K4RwdlGYUoB
+x-tenant-id: 0a2eb6f6-2727-482d-a691-e6d0848af3d9
+
+{"results":[{"location":{"id":"WS10730EM8EV","name":"深圳","country":"CN","path":"深圳,深圳,广东,中国","timezone":"Asia/Shanghai","timezone_offset":"+08:00"},"daily":[{"date":"2025-02-13","text_day":"阴","code_day":"9","text_night":"阴","code_night":"9","high":"22","low":"14","rainfall":"0.00","precip":"0.00","wind_direction":"北","wind_direction_degree":"0","wind_speed":"23.4","wind_scale":"4","humidity":"71"},{"date":"2025-02-14","text_day":"多云","code_day":"4","text_night":"阴","code_night":"9","high":"21","low":"15","rainfall":"0.00","precip":"0.00","wind_direction":"无持续风向","wind_direction_degree":"","wind_speed":"8.4","wind_scale":"2","humidity":"79"},{"date":"2025-02-15","text_day":"阴","code_day":"9","text_night":"多云","code_night":"4","high":"22","low":"16","rainfall":"0.00","precip":"0.00","wind_direction":"无持续风向","wind_direction_degree":"","wind_speed":"3.0","wind_scale":"1","humidity":"86"}],"last_update":"2025-02-13T08:00:00+08:00"}]}
+深圳 2025-02-13 阴 temperature:14~22
+深圳 2025-02-14 多云 temperature:15~21
+深圳 2025-02-15 阴 temperature:16~22
+[0;32mI (4102623) https_req: connection closed[0m
+[0;32mI (4102623) https_req: 10...[0m
+[0;32mI (4103623) https_req: 9...[0m
+[0;32mI (4104623) https_req: 8...[0m
+[0;32mI (4105623) https_req: 7...[0m
+[0;32mI (4106623) https_req: 6...[0m
+[0;32mI (4107623) https_req: 5...[0m
+[0;32mI (4108623) https_req: 4...[0m
+[0;32mI (4109623) https_req: 3...[0m
+[0;32mI (4110623) https_req: 2...[0m
+[0;32mI (4111623) https_req: 1...[0m
+[0;32mI (4112623) https_req: 0...[0m
+[0;32mI (4113623) https_req: Minimum free heap size: 102572 bytes[0m
+[0;32mI (4113623) https_req: Finish https_request[0m
+after sync tim_stamp: 1739452611
+[0;32mI (4156053) myNTP: tim_write_into_nvs successful[0m
+[0;32mI (4156053) myNTP: 70th: The current date/time in BeiJing is: Thu Feb 13 21:16:51 2025[0m
+[0;32mI (4156053) myNTP: Updated time in NVS[0m
+[0;32mI (4213803) wifi:state: run -> init (0)[0m
+[0;32mI (4213813) wifi:pm stop, total sleep time: 420236131 us / 439280651 us[0m
+
+[0;32mI (4213813) wifi:<ba-del>idx:0, tid:0[0m
+[0;32mI (4213813) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (4216053) myNTP: tim_write_into_nvs successful[0m
+[0;32mI (4216053) myNTP: 71th: The current date/time in BeiJing is: Thu Feb 13 21:17:51 2025[0m
+[0;32mI (4216083) https_req: Start 36th https_request[0m
+[0;32mI (4216083) https_req: Updating time from NVS[0m
+time in nvs:1739452671
+[0;32mI (4216083) https_req: https_request using crt bundle[0m
+[0;31mE (4223083) esp-tls: couldn't get hostname for :api.seniverse.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (4223083) esp-tls: Failed to open new connection[0m
+[0;31mE (4223083) https_req: Connection failed...[0m
+[0;32mI (4223093) https_req: 10...[0m
+[0;32mI (4224093) https_req: 9...[0m
+[0;32mI (4225093) https_req: 8...[0m
+[0;32mI (4226093) https_req: 7...[0m
+[0;32mI (4227093) https_req: 6...[0m
+[0;32mI (4228093) https_req: 5...[0m
+[0;32mI (4228983) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (4228983) wifi:state: init -> auth (b0)[0m
+[0;32mI (4228993) wifi:state: auth -> assoc (0)[0m
+[0;32mI (4229013) wifi:state: assoc -> run (10)[0m
+[0;32mI (4229033) wifi:connected with Honor100, aid = 4, channel 11, BW20, bssid = f6:b9:58:d6:0d:36[0m
+[0;32mI (4229043) wifi:security: WPA2-PSK, phy: bgn, rssi: -26[0m
+[0;32mI (4229043) wifi:pm start, type: 1[0m
+
+[0;32mI (4229043) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (4229053) myWIFI: conneted success![0m
+[0;32mI (4229073) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (4229073) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (4229093) https_req: 4...[0m
+[0;32mI (4230053) esp_netif_handlers: sta ip: 192.168.43.221, mask: 255.255.255.0, gw: 192.168.43.1[0m
+[0;32mI (4230053) myWIFI: WIFI GOT IP[0m
+[0;32mI (4230093) https_req: 3...[0m
+[0;32mI (4231093) https_req: 2...[0m
+[0;32mI (4232093) https_req: 1...[0m
+[0;32mI (4233093) https_req: 0...[0m
+[0;32mI (4234093) https_req: Minimum free heap size: 102572 bytes[0m
+[0;32mI (4234093) https_req: Finish https_request[0m
+[0;32mI (4235803) wifi:state: run -> init (0)[0m
+[0;32mI (4235813) wifi:pm stop, total sleep time: 5931239 us / 6765692 us[0m
+
+[0;32mI (4235813) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (4276053) myNTP: tim_write_into_nvs successful[0m
+[0;32mI (4276053) myNTP: 72th: The current date/time in BeiJing is: Thu Feb 13 21:18:51 2025[0m
+after sync tim_stamp: 1739452791
+[0;32mI (4336053) myNTP: tim_write_into_nvs successful[0m
+[0;32mI (4336053) myNTP: 73th: The current date/time in BeiJing is: Thu Feb 13 21:19:51 2025[0m
+[0;32mI (4336053) myNTP: Updated time in NVS[0m
+[0;32mI (4336083) https_req: Start 37th https_request[0m
+[0;32mI (4336083) https_req: Updating time from NVS[0m
+time in nvs:1739452791
+[0;32mI (4336083) https_req: https_request using crt bundle[0m
+[0;31mE (4343083) esp-tls: couldn't get hostname for :api.seniverse.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (4343083) esp-tls: Failed to open new connection[0m
+[0;31mE (4343083) https_req: Connection failed...[0m
+[0;32mI (4343093) https_req: 10...[0m
+[0;32mI (4344093) https_req: 9...[0m
+[0;32mI (4345093) https_req: 8...[0m
+[0;32mI (4346093) https_req: 7...[0m
+[0;32mI (4347093) https_req: 6...[0m
+[0;32mI (4348093) https_req: 5...[0m
+[0;32mI (4349093) https_req: 4...[0m
+[0;32mI (4350093) https_req: 3...[0m
+[0;32mI (4351093) https_req: 2...[0m
+[0;32mI (4352093) https_req: 1...[0m
+[0;32mI (4353093) https_req: 0...[0m
+[0;32mI (4354093) https_req: Minimum free heap size: 102572 bytes[0m
+[0;32mI (4354093) https_req: Finish https_request[0m
+[0;32mI (4396053) myNTP: tim_write_into_nvs successful[0m
+[0;32mI (4396053) myNTP: 74th: The current date/time in BeiJing is: Thu Feb 13 21:20:51 2025[0m
+[0;32mI (4456053) myNTP: tim_write_into_nvs successful[0m
+[0;32mI (4456053) myNTP: 75th: The current date/time in BeiJing is: Thu Feb 13 21:21:51 2025[0m
+[0;32mI (4456083) https_req: Start 38th https_request[0m
+[0;32mI (4456083) https_req: Updating time from NVS[0m
+time in nvs:1739452911
+[0;32mI (4456083) https_req: https_request using crt bundle[0m
+[0;31mE (4463093) esp-tls: couldn't get hostname for :api.seniverse.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (4463093) esp-tls: Failed to open new connection[0m
+[0;31mE (4463093) https_req: Connection failed...[0m
+[0;32mI (4463103) https_req: 10...[0m
+[0;32mI (4464103) https_req: 9...[0m
+[0;32mI (4465103) https_req: 8...[0m
+[0;32mI (4466103) https_req: 7...[0m
+[0;32mI (4467103) https_req: 6...[0m
+[0;32mI (4468103) https_req: 5...[0m
+[0;32mI (4469103) https_req: 4...[0m
+[0;32mI (4470103) https_req: 3...[0m
+[0;32mI (4471103) https_req: 2...[0m
+[0;32mI (4472103) https_req: 1...[0m
+[0;32mI (4473103) https_req: 0...[0m
+[0;32mI (4474103) https_req: Minimum free heap size: 102572 bytes[0m
+[0;32mI (4474103) https_req: Finish https_request[0m
+after sync tim_stamp: 1739452971
+[0;32mI (4516053) myNTP: Updated time in NVS[0m
+[0;32mI (4516053) myNTP: tim_write_into_nvs successful[0m
+[0;32mI (4516053) myNTP: 76th: The current date/time in BeiJing is: Thu Feb 13 21:22:51 2025[0m
+[0;32mI (4544063) wifi:new:<3,0>, old:<11,0>, ap:<255,255>, sta:<3,0>, prof:1[0m
+[0;32mI (4544073) wifi:state: init -> auth (b0)[0m
+[0;32mI (4544083) wifi:state: auth -> assoc (0)[0m
+[0;32mI (4544093) wifi:state: assoc -> run (10)[0m
+[0;32mI (4544123) wifi:connected with Honor100, aid = 11, channel 3, BW20, bssid = f6:b9:58:d6:0d:36[0m
+[0;32mI (4544123) wifi:security: WPA2-PSK, phy: bgn, rssi: -37[0m
+[0;32mI (4544143) wifi:pm start, type: 1[0m
+
+[0;32mI (4544143) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (4544143) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (4544143) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (4544153) myWIFI: conneted success![0m
+[0;32mI (4545143) esp_netif_handlers: sta ip: 192.168.43.221, mask: 255.255.255.0, gw: 192.168.43.1[0m
+[0;32mI (4545143) myWIFI: WIFI GOT IP[0m
+[0;32mI (4576053) myNTP: tim_write_into_nvs successful[0m
+[0;32mI (4576053) myNTP: 77th: The current date/time in BeiJing is: Thu Feb 13 21:23:51 2025[0m
+[0;32mI (4576083) https_req: Start 39th https_request[0m
+[0;32mI (4576083) https_req: Updating time from NVS[0m
+time in nvs:1739453031
+[0;32mI (4576083) https_req: https_request using crt bundle[0m
+[0;32mI (4576133) wifi:<ba-add>idx:0 (ifx:0, f6:b9:58:d6:0d:36), tid:0, ssn:1, winSize:64[0m
+[0;32mI (4576483) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (4577623) https_req: Connection established...[0m
+[0;32mI (4577623) https_req: 193 bytes written[0m
+[0;32mI (4577623) https_req: Reading HTTP response...[0m
+HTTP/1.1 200 OK
+Date: Thu, 13 Feb 2025 13:23:53 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 1001
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"3e9-IrzSCl6tv7gTZ5TW8ngCPZNUg/o"
+x-powered-by: Express
+x-ratelimit-limit: 20;w=60
+x-ratelimit-remaining: 19
+x-ratelimit-reset: 60.000
+x-request-id: GCPHUVjB454b0vNGkEMB
+x-tenant-id: 0a2eb6f6-2727-482d-a691-e6d0848af3d9
+
+{"results":[{"location":{"id":"WS10730EM8EV","name":"深圳","country":"CN","path":"深圳,深圳,广东,中国","timezone":"Asia/Shanghai","timezone_offset":"+08:00"},"daily":[{"date":"2025-02-13","text_day":"阴","code_day":"9","text_night":"阴","code_night":"9","high":"22","low":"14","rainfall":"0.00","precip":"0.00","wind_direction":"北","wind_direction_degree":"0","wind_speed":"23.4","wind_scale":"4","humidity":"71"},{"date":"2025-02-14","text_day":"多云","code_day":"4","text_night":"阴","code_night":"9","high":"21","low":"15","rainfall":"0.00","precip":"0.00","wind_direction":"无持续风向","wind_direction_degree":"","wind_speed":"8.4","wind_scale":"2","humidity":"79"},{"date":"2025-02-15","text_day":"阴","code_day":"9","text_night":"多云","code_night":"4","high":"22","low":"16","rainfall":"0.00","precip":"0.00","wind_direction":"无持续风向","wind_direction_degree":"","wind_speed":"3.0","wind_scale":"1","humidity":"86"}],"last_update":"2025-02-13T08:00:00+08:00"}]}
+深圳 2025-02-13 阴 temperature:14~22
+深圳 2025-02-14 多云 temperature:15~21
+深圳 2025-02-15 阴 temperature:16~22
+[0;32mI (4582743) https_req: connection closed[0m
+[0;32mI (4582753) https_req: 10...[0m
+[0;32mI (4583753) https_req: 9...[0m
+[0;32mI (4584753) https_req: 8...[0m
+[0;32mI (4585753) https_req: 7...[0m
+[0;32mI (4586753) https_req: 6...[0m
+[0;32mI (4587753) https_req: 5...[0m
+[0;32mI (4588753) https_req: 4...[0m
+[0;32mI (4589753) https_req: 3...[0m
+[0;32mI (4590753) https_req: 2...[0m
+[0;32mI (4591753) https_req: 1...[0m
+[0;32mI (4592753) https_req: 0...[0m
+[0;32mI (4593753) https_req: Minimum free heap size: 102572 bytes[0m
+[0;32mI (4593753) https_req: Finish https_request[0m
+[0;32mI (4636053) myNTP: tim_write_into_nvs successful[0m
+[0;32mI (4636053) myNTP: 78th: The current date/time in BeiJing is: Thu Feb 13 21:24:51 2025[0m
+after sync tim_stamp: 1739453151
+[0;32mI (4696053) myNTP: tim_write_into_nvs successful[0m
+[0;32mI (4696053) myNTP: 79th: The current date/time in BeiJing is: Thu Feb 13 21:25:51 2025[0m
+[0;32mI (4696053) myNTP: Updated time in NVS[0m
+[0;32mI (4696083) https_req: Start 40th https_request[0m
+[0;32mI (4696083) https_req: Updating time from NVS[0m
+time in nvs:1739453151
+[0;32mI (4696083) https_req: https_request using crt bundle[0m
+[0;32mI (4696753) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (4697483) https_req: Connection established...[0m
+[0;32mI (4697483) https_req: 193 bytes written[0m
+[0;32mI (4697483) https_req: Reading HTTP response...[0m
+HTTP/1.1 200 OK
+Date: Thu, 13 Feb 2025 13:25:53 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 1001
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"3e9-IrzSCl6tv7gTZ5TW8ngCPZNUg/o"
+x-powered-by: Express
+x-ratelimit-limit: 20;w=60
+x-ratelimit-remaining: 19
+x-ratelimit-reset: 60.000
+x-request-id: GCPHbUBIzsDTdUvZs7IC
+x-tenant-id: 0a2eb6f6-2727-482d-a691-e6d0848af3d9
+
+{"results":[{"location":{"id":"WS10730EM8EV","name":"深圳","country":"CN","path":"深圳,深圳,广东,中国","timezone":"Asia/Shanghai","timezone_offset":"+08:00"},"daily":[{"date":"2025-02-13","text_day":"阴","code_day":"9","text_night":"阴","code_night":"9","high":"22","low":"14","rainfall":"0.00","precip":"0.00","wind_direction":"北","wind_direction_degree":"0","wind_speed":"23.4","wind_scale":"4","humidity":"71"},{"date":"2025-02-14","text_day":"多云","code_day":"4","text_night":"阴","code_night":"9","high":"21","low":"15","rainfall":"0.00","precip":"0.00","wind_direction":"无持续风向","wind_direction_degree":"","wind_speed":"8.4","wind_scale":"2","humidity":"79"},{"date":"2025-02-15","text_day":"阴","code_day":"9","text_night":"多云","code_night":"4","high":"22","low":"16","rainfall":"0.00","precip":"0.00","wind_direction":"无持续风向","wind_direction_degree":"","wind_speed":"3.0","wind_scale":"1","humidity":"86"}],"last_update":"2025-02-13T08:00:00+08:00"}]}
+深圳 2025-02-13 阴 temperature:14~22
+深圳 2025-02-14 多云 temperature:15~21
+深圳 2025-02-15 阴 temperature:16~22
+[0;32mI (4702753) https_req: connection closed[0m
+[0;32mI (4702763) https_req: 10...[0m
+[0;32mI (4703763) https_req: 9...[0m
+[0;32mI (4704763) https_req: 8...[0m
+[0;32mI (4705763) https_req: 7...[0m
+[0;32mI (4706763) https_req: 6...[0m
+[0;32mI (4707763) https_req: 5...[0m
+[0;32mI (4708763) https_req: 4...[0m
+[0;32mI (4709763) https_req: 3...[0m
+[0;32mI (4710763) https_req: 2...[0m
+[0;32mI (4711763) https_req: 1...[0m
+[0;32mI (4712763) https_req: 0...[0m
+[0;32mI (4713763) https_req: Minimum free heap size: 102572 bytes[0m
+[0;32mI (4713763) https_req: Finish https_request[0m
+[0;32mI (4756053) myNTP: tim_write_into_nvs successful[0m
+[0;32mI (4756053) myNTP: 80th: The current date/time in BeiJing is: Thu Feb 13 21:26:51 2025[0m
+[0;32mI (4806673) wifi:state: run -> init (0)[0m
+[0;32mI (4806683) wifi:pm stop, total sleep time: 250692240 us / 262541332 us[0m
+
+[0;32mI (4806683) wifi:<ba-del>idx:0, tid:0[0m
+[0;32mI (4806683) wifi:new:<3,0>, old:<3,0>, ap:<255,255>, sta:<3,0>, prof:1[0m
+[0;32mI (4806733) smartconfig: SC version: V3.0.1[0m
+[0;32mI (4806733) myWIFI: smartconfig  has started![0m
+[0;32mI (4811573) wifi:ic_enable_sniffer[0m
+[0;32mI (4811573) smartconfig: Start to find channel...[0m
+[0;32mI (4811573) myWIFI: Scan done[0m
+[0;32mI (4816053) myNTP: tim_write_into_nvs successful[0m
+[0;32mI (4816053) myNTP: 81th: The current date/time in BeiJing is: Thu Feb 13 21:27:51 2025[0m
+[0;32mI (4816083) https_req: Start 41th https_request[0m
+[0;32mI (4816083) https_req: Updating time from NVS[0m
+time in nvs:1739453271
+[0;32mI (4816083) https_req: https_request using crt bundle[0m
+[0;31mE (4816093) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (4816093) esp-tls: Failed to open new connection[0m
+[0;31mE (4816103) https_req: Connection failed...[0m
+[0;32mI (4816103) https_req: 10...[0m
+[0;32mI (4817103) https_req: 9...[0m
+[0;32mI (4818103) https_req: 8...[0m
+[0;32mI (4819103) https_req: 7...[0m
+[0;32mI (4820103) https_req: 6...[0m
+[0;32mI (4821103) https_req: 5...[0m
+[0;32mI (4822103) https_req: 4...[0m
+[0;32mI (4823103) https_req: 3...[0m
+[0;32mI (4824103) https_req: 2...[0m
+[0;32mI (4825103) https_req: 1...[0m
+[0;32mI (4826103) https_req: 0...[0m
+[0;32mI (4827103) https_req: Minimum free heap size: 102572 bytes[0m
+[0;32mI (4827103) https_req: Finish https_request[0m
+after sync tim_stamp: 1739453331
+[0;32mI (4876053) myNTP: tim_write_into_nvs successful[0m
+[0;32mI (4876053) myNTP: 82th: The current date/time in BeiJing is: Thu Feb 13 21:28:51 2025[0m
+[0;32mI (4876053) myNTP: Updated time in NVS[0m
+[0;32mI (4936053) myNTP: tim_write_into_nvs successful[0m
+[0;32mI (4936053) myNTP: 83th: The current date/time in BeiJing is: Thu Feb 13 21:29:51 2025[0m
+[0;32mI (4936083) https_req: Start 42th https_request[0m
+[0;32mI (4936083) https_req: Updating time from NVS[0m
+time in nvs:1739453391
+[0;32mI (4936083) https_req: https_request using crt bundle[0m
+[0;31mE (4943093) esp-tls: couldn't get hostname for :api.seniverse.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (4943093) esp-tls: Failed to open new connection[0m
+[0;31mE (4943093) https_req: Connection failed...[0m
+[0;32mI (4943103) https_req: 10...[0m
+[0;32mI (4944103) https_req: 9...[0m
+[0;32mI (4945103) https_req: 8...[0m
+[0;32mI (4946103) https_req: 7...[0m
+[0;32mI (4947103) https_req: 6...[0m
+[0;32mI (4948103) https_req: 5...[0m
+[0;32mI (4949103) https_req: 4...[0m
+[0;32mI (4950103) https_req: 3...[0m
+[0;32mI (4951103) https_req: 2...[0m
+[0;32mI (4952103) https_req: 1...[0m
+[0;32mI (4953103) https_req: 0...[0m
+[0;32mI (4954103) https_req: Minimum free heap size: 102572 bytes[0m
+[0;32mI (4954103) https_req: Finish https_request[0m
+[0;32mI (4996053) myNTP: tim_write_into_nvs successful[0m
+[0;32mI (4996053) myNTP: 84th: The current date/time in BeiJing is: Thu Feb 13 21:30:51 2025[0m
+after sync tim_stamp: 1739453511
+[0;32mI (5056053) myNTP: tim_write_into_nvs successful[0m
+[0;32mI (5056053) myNTP: 85th: The current date/time in BeiJing is: Thu Feb 13 21:31:51 2025[0m
+[0;32mI (5056053) myNTP: Updated time in NVS[0m
+[0;32mI (5056083) https_req: Start 43th https_request[0m
+[0;32mI (5056083) https_req: Updating time from NVS[0m
+time in nvs:1739453511
+[0;32mI (5056083) https_req: https_request using crt bundle[0m
+[0;31mE (5063083) esp-tls: couldn't get hostname for :api.seniverse.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (5063083) esp-tls: Failed to open new connection[0m
+[0;31mE (5063083) https_req: Connection failed...[0m
+[0;32mI (5063093) https_req: 10...[0m
+[0;32mI (5064093) https_req: 9...[0m
+[0;32mI (5065093) https_req: 8...[0m
+[0;32mI (5066093) https_req: 7...[0m
+[0;32mI (5067093) https_req: 6...[0m
+[0;32mI (5068093) https_req: 5...[0m
+[0;32mI (5069093) https_req: 4...[0m
+[0;32mI (5070093) https_req: 3...[0m
+[0;32mI (5071093) https_req: 2...[0m
+[0;32mI (5072093) https_req: 1...[0m
+[0;32mI (5073093) https_req: 0...[0m
+[0;32mI (5074093) https_req: Minimum free heap size: 102572 bytes[0m
+[0;32mI (5074093) https_req: Finish https_request[0m
+[0;32mI (5116053) myNTP: tim_write_into_nvs successful[0m
+[0;32mI (5116053) myNTP: 86th: The current date/time in BeiJing is: Thu Feb 13 21:32:51 2025[0m
+[0;32mI (5176053) myNTP: tim_write_into_nvs successful[0m
+[0;32mI (5176053) myNTP: 87th: The current date/time in BeiJing is: Thu Feb 13 21:33:51 2025[0m
+[0;32mI (5176083) https_req: Start 44th https_request[0m
+[0;32mI (5176083) https_req: Updating time from NVS[0m
+time in nvs:1739453631
+[0;32mI (5176083) https_req: https_request using crt bundle[0m
+[0;31mE (5183083) esp-tls: couldn't get hostname for :api.seniverse.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (5183083) esp-tls: Failed to open new connection[0m
+[0;31mE (5183083) https_req: Connection failed...[0m
+[0;32mI (5183093) https_req: 10...[0m
+[0;32mI (5184093) https_req: 9...[0m
+[0;32mI (5185093) https_req: 8...[0m
+[0;32mI (5186093) https_req: 7...[0m
+[0;32mI (5187093) https_req: 6...[0m
+[0;32mI (5188093) https_req: 5...[0m
+[0;32mI (5189093) https_req: 4...[0m
+[0;32mI (5190093) https_req: 3...[0m
+[0;32mI (5191093) https_req: 2...[0m
+[0;32mI (5192093) https_req: 1...[0m
+[0;32mI (5193093) https_req: 0...[0m
+[0;32mI (5194093) https_req: Minimum free heap size: 102572 bytes[0m
+[0;32mI (5194093) https_req: Finish https_request[0m
+after sync tim_stamp: 1739453691
+[0;32mI (5236053) myNTP: tim_write_into_nvs successful[0m
+[0;32mI (5236053) myNTP: 88th: The current date/time in BeiJing is: Thu Feb 13 21:34:51 2025[0m
+[0;32mI (5236053) myNTP: Updated time in NVS[0m
+[0;32mI (5296053) myNTP: tim_write_into_nvs successful[0m
+[0;32mI (5296053) myNTP: 89th: The current date/time in BeiJing is: Thu Feb 13 21:35:51 2025[0m
+[0;32mI (5296083) https_req: Start 45th https_request[0m
+[0;32mI (5296083) https_req: Updating time from NVS[0m
+time in nvs:1739453751
+[0;32mI (5296083) https_req: https_request using crt bundle[0m
+[0;31mE (5303083) esp-tls: couldn't get hostname for :api.seniverse.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (5303083) esp-tls: Failed to open new connection[0m
+[0;31mE (5303083) https_req: Connection failed...[0m
+[0;32mI (5303093) https_req: 10...[0m
+[0;32mI (5304093) https_req: 9...[0m
+[0;32mI (5305093) https_req: 8...[0m
+[0;32mI (5306093) https_req: 7...[0m
+[0;32mI (5307093) https_req: 6...[0m
+[0;32mI (5308093) https_req: 5...[0m
+[0;32mI (5309093) https_req: 4...[0m
+[0;32mI (5310093) https_req: 3...[0m
+[0;32mI (5311093) https_req: 2...[0m
+[0;32mI (5312093) https_req: 1...[0m
+[0;32mI (5313093) https_req: 0...[0m
+[0;32mI (5314093) https_req: Minimum free heap size: 102572 bytes[0m
+[0;32mI (5314093) https_req: Finish https_request[0m
+[0;32mI (5356053) myNTP: tim_write_into_nvs successful[0m
+[0;32mI (5356053) myNTP: 90th: The current date/time in BeiJing is: Thu Feb 13 21:36:51 2025[0m
+after sync tim_stamp: 1739453871
+[0;32mI (5416053) myNTP: tim_write_into_nvs successful[0m
+[0;32mI (5416053) myNTP: 91th: The current date/time in BeiJing is: Thu Feb 13 21:37:51 2025[0m
+[0;32mI (5416053) myNTP: Updated time in NVS[0m
+[0;32mI (5416083) https_req: Start 46th https_request[0m
+[0;32mI (5416083) https_req: Updating time from NVS[0m
+time in nvs:1739453871
+[0;32mI (5416083) https_req: https_request using crt bundle[0m
+[0;31mE (5423083) esp-tls: couldn't get hostname for :api.seniverse.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (5423083) esp-tls: Failed to open new connection[0m
+[0;31mE (5423083) https_req: Connection failed...[0m
+[0;32mI (5423093) https_req: 10...[0m
+[0;32mI (5424093) https_req: 9...[0m
+[0;32mI (5425093) https_req: 8...[0m
+[0;32mI (5426093) https_req: 7...[0m
+[0;32mI (5427093) https_req: 6...[0m
+[0;32mI (5428093) https_req: 5...[0m
+[0;32mI (5429093) https_req: 4...[0m
+[0;32mI (5430093) https_req: 3...[0m
+[0;32mI (5431093) https_req: 2...[0m
+[0;32mI (5432093) https_req: 1...[0m
+[0;32mI (5433093) https_req: 0...[0m
+[0;32mI (5434093) https_req: Minimum free heap size: 102572 bytes[0m
+[0;32mI (5434093) https_req: Finish https_request[0m
+[0;32mI (5476053) myNTP: tim_write_into_nvs successful[0m
+[0;32mI (5476053) myNTP: 92th: The current date/time in BeiJing is: Thu Feb 13 21:38:51 2025[0m
+[0;32mI (5536053) myNTP: tim_write_into_nvs successful[0m
+[0;32mI (5536053) myNTP: 93th: The current date/time in BeiJing is: Thu Feb 13 21:39:51 2025[0m
+[0;32mI (5536083) https_req: Start 47th https_request[0m
+[0;32mI (5536083) https_req: Updating time from NVS[0m
+time in nvs:1739453991
+[0;32mI (5536083) https_req: https_request using crt bundle[0m
+[0;31mE (5543083) esp-tls: couldn't get hostname for :api.seniverse.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (5543083) esp-tls: Failed to open new connection[0m
+[0;31mE (5543083) https_req: Connection failed...[0m
+[0;32mI (5543093) https_req: 10...[0m
+[0;32mI (5544093) https_req: 9...[0m
+[0;32mI (5545093) https_req: 8...[0m
+[0;32mI (5546093) https_req: 7...[0m
+[0;32mI (5547093) https_req: 6...[0m
+[0;32mI (5548093) https_req: 5...[0m
+[0;32mI (5549093) https_req: 4...[0m
+[0;32mI (5550093) https_req: 3...[0m
+[0;32mI (5551093) https_req: 2...[0m
+[0;32mI (5552093) https_req: 1...[0m
+[0;32mI (5553093) https_req: 0...[0m
+[0;32mI (5554093) https_req: Minimum free heap size: 102572 bytes[0m
+[0;32mI (5554093) https_req: Finish https_request[0m
+after sync tim_stamp: 1739454051
+[0;32mI (5596053) myNTP: tim_write_into_nvs successful[0m
+[0;32mI (5596053) myNTP: 94th: The current date/time in BeiJing is: Thu Feb 13 21:40:51 2025[0m
+[0;32mI (5596053) myNTP: Updated time in NVS[0m
+[0;32mI (5656053) myNTP: tim_write_into_nvs successful[0m
+[0;32mI (5656053) myNTP: 95th: The current date/time in BeiJing is: Thu Feb 13 21:41:51 2025[0m
+[0;32mI (5656083) https_req: Start 48th https_request[0m
+[0;32mI (5656083) https_req: Updating time from NVS[0m
+time in nvs:1739454111
+[0;32mI (5656083) https_req: https_request using crt bundle[0m
+[0;31mE (5663083) esp-tls: couldn't get hostname for :api.seniverse.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (5663083) esp-tls: Failed to open new connection[0m
+[0;31mE (5663083) https_req: Connection failed...[0m
+[0;32mI (5663093) https_req: 10...[0m
+[0;32mI (5664093) https_req: 9...[0m
+[0;32mI (5665093) https_req: 8...[0m
+[0;32mI (5666093) https_req: 7...[0m
+[0;32mI (5667093) https_req: 6...[0m
+[0;32mI (5668093) https_req: 5...[0m
+[0;32mI (5669093) https_req: 4...[0m
+[0;32mI (5670093) https_req: 3...[0m
+[0;32mI (5671093) https_req: 2...[0m
+[0;32mI (5672093) https_req: 1...[0m
+[0;32mI (5673093) https_req: 0...[0m
+[0;32mI (5674093) https_req: Minimum free heap size: 102572 bytes[0m
+[0;32mI (5674093) https_req: Finish https_request[0m

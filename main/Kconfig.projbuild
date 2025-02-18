@@ -1,0 +1,9 @@
+menu "Example Configuration"
+
+    config EXAMPLE_USING_ESP_TLS_MBEDTLS
+        bool "Use ESP-TLS with mbedTLS"
+        default y
+        help
+            Enable this option to use mbedTLS as the backend for ESP-TLS.
+
+endmenu
