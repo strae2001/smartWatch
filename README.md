@@ -42,13 +42,12 @@ Enter the following command into the git terminal
 
    Enter the following command in order:  
 
-   `cd .\components\lvgl-submodule\`
+   `cd .\components\lvgl\`
 
    `git checkout v8.3.10`
 
    `cd ..\..`
 
-2. Delete the lvgl folder in the `smartWatch\components\` directory and rename the lvgl-submodule folder to lvgl
 
 3. build project, Enter the following command in order: 
 
