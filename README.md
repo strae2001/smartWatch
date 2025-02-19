@@ -16,7 +16,7 @@ Enter the following command into the git terminal
 
 ### Precondition
 
-1. Before building this project,  you must install the ESP-IDF framework on vscode (preferably version 5.2.3).
+1. Before building this project,  you must install the ESP-IDF framework(preferably version 5.2.3) on vscode.
 2. **Hardware**:  esp32 board、MicroSDcard slot of the SPI interface（CMD line need 10k pullup）、MicroSDcard、*I.69IPS* Touch screen for SPI and I2C interfaces（st7789、cst816t）
 
 ​		**Wiring diagram**
