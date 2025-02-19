@@ -7,9 +7,9 @@ Based on ESP32 board and devloped on ESP-IDF 5.2.3 frame.
 
 ### Demostrate
 
-link: `https://www.bilibili.com/video/BV1d8AzeiEC7/?share_source=copy_web&vd_source=9764d86014ed77e2a1a93a3e0336772e`
+link1: `https://www.bilibili.com/video/BV1d8AzeiEC7/?share_source=copy_web&vd_source=9764d86014ed77e2a1a93a3e0336772e`
 
-link: `https://pan.baidu.com/s/1B9QGl6yoN3_i8lEqFooT5Q?pwd=cc68`
+link2: `https://pan.baidu.com/s/1B9QGl6yoN3_i8lEqFooT5Q?pwd=cc68`
 
 
 ### How to get source code
