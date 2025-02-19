@@ -66,7 +66,9 @@ Enter the following command into the git terminal
 ### Problem
 
 If your screen color displays a color difference and the image has a black square in the background 
+
 then Enter the following command:
+
 `idf.py menuconfig`
 
 After the configuration page is displayed, perform the following configurations：
